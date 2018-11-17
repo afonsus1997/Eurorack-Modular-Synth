@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=CV_Out1 Pin=CV_POWER_OUT_2-1
+Removed Pin From Net: NetName=CV_Out2 Pin=CV_POWER_OUT_2-2
+Removed Pin From Net: NetName=CV_Out3 Pin=CV_POWER_OUT_2-3
+Removed Pin From Net: NetName=CV_Out4 Pin=CV_POWER_OUT_2-4

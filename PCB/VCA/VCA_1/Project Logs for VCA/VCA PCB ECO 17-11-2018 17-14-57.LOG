@@ -1,0 +1,30 @@
+Change Component DesignItemId : Designator=R5 Old DesignItemId=Res1 New DesignItemId=
+Change Component Footprint: Designator=R2 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R5 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R6 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R7 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R9 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R10 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R11 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R13 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R17 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R18 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R19 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R21 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R22 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R23 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R25 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R29 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R30 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R31 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R33 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R34 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R35 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R37 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R41 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R42 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R43 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R45 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R46 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Footprint: Designator=R47 Old Footprint=AXIAL-0.3 New Footprint=0207/2V
+Change Component Library : Designator=R5 Old Library=Miscellaneous Devices.IntLib New Library=resistor.SCHLIB

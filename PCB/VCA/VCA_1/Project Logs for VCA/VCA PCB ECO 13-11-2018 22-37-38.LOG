@@ -1,0 +1,102 @@
+Removed Pin From Net: NetName=+12V Pin=C11-1
+Removed Pin From Net: NetName=GND Pin=C11-2
+Removed Pin From Net: NetName=-12V Pin=C17-1
+Removed Pin From Net: NetName=GND Pin=C17-2
+Removed Pin From Net: NetName=GND Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D2-1
+Removed Pin From Net: NetName=GND Pin=D3-1
+Removed Pin From Net: NetName=GND Pin=D4-1
+Removed Pin From Net: NetName=+12V Pin=D5-2
+Removed Pin From Net: NetName=-12V Pin=D6-1
+Removed Pin From Net: NetName=GND Pin=P1-9
+Removed Pin From Net: NetName=GND Pin=P1-10
+Removed Pin From Net: NetName=GND Pin=P1-11
+Removed Pin From Net: NetName=GND Pin=P1-12
+Removed Pin From Net: NetName=GND Pin=P4-3
+Removed Pin From Net: NetName=GND Pin=P4-4
+Removed Pin From Net: NetName=GND Pin=P4-5
+Removed Pin From Net: NetName=GND Pin=P4-6
+Removed Pin From Net: NetName=GND Pin=P4-7
+Removed Pin From Net: NetName=GND Pin=P4-8
+Removed Pin From Net: NetName=-12V Pin=R49-1
+Removed Pin From Net: NetName=+12V Pin=R50-2
+Removed Pin From Net: NetName=-12V Pin=R51-1
+Removed Pin From Net: NetName=+12V Pin=R52-2
+Removed Pin From Net: NetName=-12V Pin=R53-1
+Removed Pin From Net: NetName=+12V Pin=R54-2
+Removed Pin From Net: NetName=-12V Pin=R55-1
+Removed Pin From Net: NetName=+12V Pin=R56-2
+Removed Pin From Net: NetName=GND Pin=U1-3
+Removed Pin From Net: NetName=-12V Pin=U1-4
+Removed Pin From Net: NetName=GND Pin=U1-5
+Removed Pin From Net: NetName=+12V Pin=U1-8
+Removed Pin From Net: NetName=GND Pin=U2-3
+Removed Pin From Net: NetName=-12V Pin=U2-4
+Removed Pin From Net: NetName=GND Pin=U2-5
+Removed Pin From Net: NetName=+12V Pin=U2-8
+Removed Member From Class: ClassName=VCA Member=C11
+Removed Member From Class: ClassName=VCA Member=C17
+Removed Member From Class: ClassName=VCA Member=D1
+Removed Member From Class: ClassName=VCA Member=D2
+Removed Member From Class: ClassName=VCA Member=D3
+Removed Member From Class: ClassName=VCA Member=D4
+Removed Member From Class: ClassName=VCA Member=D5
+Removed Member From Class: ClassName=VCA Member=D6
+Removed Member From Class: ClassName=VCA Member=P1
+Removed Member From Class: ClassName=VCA Member=P4
+Removed Member From Class: ClassName=VCA Member=P5
+Removed Member From Class: ClassName=VCA Member=P6
+Removed Member From Class: ClassName=VCA Member=P7
+Removed Member From Class: ClassName=VCA Member=P8
+Removed Member From Class: ClassName=VCA Member=R1
+Removed Member From Class: ClassName=VCA Member=R3
+Removed Member From Class: ClassName=VCA Member=R4
+Removed Member From Class: ClassName=VCA Member=R8
+Removed Member From Class: ClassName=VCA Member=R12
+Removed Member From Class: ClassName=VCA Member=R14
+Removed Member From Class: ClassName=VCA Member=R15
+Removed Member From Class: ClassName=VCA Member=R16
+Removed Member From Class: ClassName=VCA Member=R20
+Removed Member From Class: ClassName=VCA Member=R24
+Removed Member From Class: ClassName=VCA Member=R26
+Removed Member From Class: ClassName=VCA Member=R27
+Removed Member From Class: ClassName=VCA Member=R28
+Removed Member From Class: ClassName=VCA Member=R32
+Removed Member From Class: ClassName=VCA Member=R36
+Removed Member From Class: ClassName=VCA Member=R38
+Removed Member From Class: ClassName=VCA Member=R39
+Removed Member From Class: ClassName=VCA Member=R40
+Removed Member From Class: ClassName=VCA Member=R44
+Removed Member From Class: ClassName=VCA Member=R48
+Removed Member From Class: ClassName=VCA Member=R49
+Removed Member From Class: ClassName=VCA Member=R50
+Removed Member From Class: ClassName=VCA Member=R51
+Removed Member From Class: ClassName=VCA Member=R52
+Removed Member From Class: ClassName=VCA Member=R53
+Removed Member From Class: ClassName=VCA Member=R54
+Removed Member From Class: ClassName=VCA Member=R55
+Removed Member From Class: ClassName=VCA Member=R56
+Removed Member From Class: ClassName=VCA Member=U1
+Removed Member From Class: ClassName=VCA Member=U2
+Added Component: Designator=CV_POWER_IN(HDR1X7)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12V Pin=CV_POWER_IN-5
+Added Pin To Net: NetName=-12V Pin=CV_POWER_IN-6
+Added Pin To Net: NetName=GND Pin=CV_POWER_IN-7
+Added Pin To Net: NetName=NetCV_POWER_IN_1 Pin=CV_POWER_IN-1
+Added Pin To Net: NetName=NetCV_POWER_IN_1 Pin=IC1-3
+Added Net: Name=NetCV_POWER_IN_1
+Added Pin To Net: NetName=NetCV_POWER_IN_2 Pin=CV_POWER_IN-2
+Added Pin To Net: NetName=NetCV_POWER_IN_2 Pin=IC1-6
+Added Net: Name=NetCV_POWER_IN_2
+Added Pin To Net: NetName=NetCV_POWER_IN_3 Pin=CV_POWER_IN-3
+Added Pin To Net: NetName=NetCV_POWER_IN_3 Pin=IC1-11
+Added Net: Name=NetCV_POWER_IN_3
+Added Pin To Net: NetName=NetCV_POWER_IN_4 Pin=CV_POWER_IN-4
+Added Pin To Net: NetName=NetCV_POWER_IN_4 Pin=IC1-14
+Added Net: Name=NetCV_POWER_IN_4
+Added Member To Class: ClassName=VCA Member=Component CV_POWER_IN Header 7

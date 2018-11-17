@@ -1,0 +1,2 @@
+Change Component Designator: OldDesignator=CV_POWER_OUT NewDesignator=CV_POWER_OUT_2
+Added Member To Class: ClassName=VCA_2 Member=Component CV_POWER_OUT_2 POWER_CV_OUT

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+12V Pin=CV_POWER_OUT-5
+Removed Pin From Net: NetName=-12V Pin=CV_POWER_OUT-6
+Removed Pin From Net: NetName=+12V Pin=CV_POWER_OUT_2-5
+Removed Pin From Net: NetName=-12V Pin=CV_POWER_OUT_2-6
+Added Pin To Net: NetName=-12V Pin=CV_POWER_OUT-5
+Added Pin To Net: NetName=+12V Pin=CV_POWER_OUT-6
+Added Pin To Net: NetName=-12V Pin=CV_POWER_OUT_2-5
+Added Pin To Net: NetName=+12V Pin=CV_POWER_OUT_2-6
+Added Member To Class: ClassName=VCA_2 Member=Component CV_POWER_OUT POWER_CV_OUT

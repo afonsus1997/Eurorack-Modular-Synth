@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+12V Pin=C14-1
+Removed Pin From Net: NetName=GND Pin=C14-2
+Removed Pin From Net: NetName=-12V Pin=C22-1
+Removed Pin From Net: NetName=GND Pin=C22-2
+Removed Member From Class: ClassName=VCA Member=C14
+Removed Member From Class: ClassName=VCA Member=C22
