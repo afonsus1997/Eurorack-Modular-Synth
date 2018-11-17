@@ -1,0 +1,30 @@
+Solid Edge Translation to STEP
+Date: sábado,novembro 17,2018 08:33
+Output File: C:\Users\Afonso Muralha\Documents\GitHub\Eurorack-Modular-Synth\PCB\VCA\Altium 3D\L bracket.step
+Author: Unknown
+Organization: Unknown
+Source System: Solid Edge
+
+Hardware:
+Processor: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz
+Operating System: Windows 8 Professional
+Installed Memory: 7.71 GB
+
+Software Information
+Parasolid Version: 30.0.167
+PSBodyShop Version: 30.0.81
+Step Adapter Version: 3.0.52
+Solid Edge Version: 110.00.00.107 x64
+
+STEP Export Options
+Export Format: AP214
+Export Construction Sheets: Off
+Export Construction Solids: Off
+Export Construction Wires: Off
+Export Displayed Parts Only: Off
+Export Units: Millimeters
+Export Part Component Names As Unicode: Off
+
+Phase 1 of 1 Translating Parasolid to foreign data types...
+Translation process completed
+Time required to translate:00 : 00 : 01
