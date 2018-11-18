@@ -1,0 +1,39 @@
+STEP translation to Solid Edge
+Date: sábado,novembro 17,2018 09:09
+Source File: F:\Documents\GitHub\Eurorack-Modular-Synth\PCB\VCA\VCA_2\VCA_2.step
+Author: Author
+Organization: Open CASCADE
+Source System: Open CASCADE 6.8
+
+Hardware:
+Processor: Intel(R) Core(TM) i5-4670K CPU @ 3.40GHz
+Operating System: Windows 8 Professional
+Installed Memory: 7.85 GB
+
+Software Information
+Parasolid Version: 30.0.167
+PSBodyShop Version: 30.0.81
+Step Adapter Version: 3.0.52
+Solid Edge Version: 110.00.00.107 x64
+
+Step Import Options
+Import Faceted Bodies: On
+Import Check Bodies: Off
+Import Curves: On
+Import DoNotSave: On
+Import Multiple Bodies As Single Part File: On
+Import Stitch Surfaces: On
+Import Boolean Solids: On
+Make Base Feature: On
+Simplify Geometry: On
+Import Imprint Curves: On
+Import Drive: C:
+Import Stitch Surfaces: On
+Import Surfaces: On
+Import Output Path: F:\Documents\GitHub\Eurorack-Modular-Synth\PCB\VCA\VCA_2
+Import Enable Default Output Path: On
+Import Path: 
+
+Translating to Parasolid data types...
+Translation process completed
+Total time required to translate and post process:00 : 00 : 03
