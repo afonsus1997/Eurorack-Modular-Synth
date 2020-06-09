@@ -34,4 +34,3 @@ Full DDS VCO module
     * 192khz
     * 24bit
     * 2channel
-    * 

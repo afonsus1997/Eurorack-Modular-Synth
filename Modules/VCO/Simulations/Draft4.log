@@ -1,0 +1,73 @@
+Circuit: * F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\Draft4.asc
+
+WARNING: Less than two connections to node NC_01.  This node is used by VSWEEP1.
+WARNING: Less than two connections to node NC_02.  This node is used by R4.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.5165
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 5.49501
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 5.50104
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 5.68182%
+Source Step = 7.57576%
+Source Step = 9.4697%
+Source Step = 11.3636%
+Source Step = 13.2576%
+vernier = 0.09375
+Source Step = 15.2462%
+Source Step = 18.0871%
+Source Step = 20.928%
+Source Step = 23.7689%
+Source Step = 26.6098%
+Source Step = 29.4508%
+vernier = 0.140625
+Source Step = 33.7121%
+Source Step = 37.9735%
+Source Step = 42.2348%
+Source Step = 46.4962%
+Source Step = 50.7576%
+vernier = 0.210938
+Source Step = 56.9366%
+Source Step = 63.3286%
+Source Step = 69.7206%
+Source Step = 76.1127%
+Source Step = 82.5047%
+vernier = 0.316406
+Source Step = 91.4536%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Mon May 18 23:27:18 2020
+Total elapsed time: 0.233 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 5480
+traniter = 2607
+tranpoints = 782
+accept = 571
+rejected = 211
+matrix size = 48
+fillins = 88
+solver = Normal
+Matrix Compiler1: 6.88 KB object code size  1.2/0.6/[0.4]
+Matrix Compiler2: 5.49 KB object code size  0.6/0.8/[0.5]
+
