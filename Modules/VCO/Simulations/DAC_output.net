@@ -1,0 +1,28 @@
+* F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\DAC_output.asc
+XU1 0 N005 VCC VEE N002 NE5532TI_SN
+V1 VCC 0 12
+V2 0 VEE 12
+R1 N005 N001 3k
+R2 N002 N001 5.6k
+Vsweep1 NC_01 0 AC 1
+C1 N002 N005 1n
+V3 N007 0 SINE(2.5 2.5 5k) AC 0
+R3 N001 N008 5.6k
+C2 0 N001 4n
+C3 N009 N002 10µ
+XU2 0 N003 VCC VEE N006 NE5532TI_SN
+R4 N010 N009 20k
+C4 N006 N003 47p
+R5 N004 N003 100k
+R6 N004 N006 1k
+R7 N004 0 100k
+R8 N003 N010 30k
+C5 N008 N007 10µ
+.inc NE5532_SN.mod
+.tran 0 1m 0 10n
+* .ac dec 10000 10 1G
+.four 5000 10 100 V(n002)
+.options numdgt = 7
+.options plotwinsize = 0
+.backanno
+.end

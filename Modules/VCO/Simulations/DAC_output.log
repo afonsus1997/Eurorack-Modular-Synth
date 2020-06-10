@@ -1,6 +1,6 @@
 Circuit: * F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\DAC_output.asc
 
-WARNING: Less than two connections to node NC_01.  This node is used by VSWEEP.
+WARNING: Less than two connections to node NC_01.  This node is used by VSWEEP1.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -67,39 +67,39 @@ Source stepping succeeded in finding the operating point.
 
 N-Period=100
 Fourier components of V(n002)
-DC component:2.4934
+DC component:-0.0020226
 
 Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
  Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
-    1   	5.000e+03	4.885e+00	1.000e+00	  159.59°	    0.00°
-    2   	1.000e+04	2.393e-02	4.898e-03	  -98.79°	 -258.38°
-    3   	1.500e+04	2.550e-02	5.219e-03	 -111.97°	 -271.56°
-    4   	2.000e+04	2.443e-02	5.000e-03	 -126.59°	 -286.17°
-    5   	2.500e+04	2.169e-02	4.440e-03	 -138.54°	 -298.13°
-    6   	3.000e+04	1.877e-02	3.842e-03	 -147.08°	 -306.67°
-    7   	3.500e+04	1.627e-02	3.330e-03	 -153.04°	 -312.63°
-    8   	4.000e+04	1.425e-02	2.917e-03	 -157.29°	 -316.88°
-    9   	4.500e+04	1.264e-02	2.586e-03	 -160.41°	 -320.00°
-   10   	5.000e+04	1.133e-02	2.320e-03	 -162.78°	 -322.37°
-Total Harmonic Distortion: 1.193209%(3.269238%)
+    1   	5.000e+03	2.491e+00	1.000e+00	  158.93°	    0.00°
+    2   	1.000e+04	1.318e-02	5.290e-03	 -100.46°	 -259.40°
+    3   	1.500e+04	1.383e-02	5.553e-03	 -114.13°	 -273.07°
+    4   	2.000e+04	1.306e-02	5.241e-03	 -128.70°	 -287.64°
+    5   	2.500e+04	1.149e-02	4.611e-03	 -140.31°	 -299.24°
+    6   	3.000e+04	9.896e-03	3.973e-03	 -148.50°	 -307.43°
+    7   	3.500e+04	8.561e-03	3.437e-03	 -154.19°	 -313.12°
+    8   	4.000e+04	7.494e-03	3.009e-03	 -158.23°	 -317.16°
+    9   	4.500e+04	6.644e-03	2.667e-03	 -161.21°	 -320.14°
+   10   	5.000e+04	5.959e-03	2.393e-03	 -163.47°	 -322.40°
+Total Harmonic Distortion: 1.253172%(3.433772%)
 
 
 
-Date: Wed Jun 10 12:10:41 2020
-Total elapsed time: 6.332 seconds.
+Date: Wed Jun 10 17:24:01 2020
+Total elapsed time: 8.621 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 212420
-traniter = 203571
-tranpoints = 100617
-accept = 100454
-rejected = 163
-matrix size = 156
-fillins = 251
+totiter = 211601
+traniter = 202850
+tranpoints = 100495
+accept = 100363
+rejected = 132
+matrix size = 155
+fillins = 241
 solver = Normal
-Thread vector: 9.7/5.0[4] 12.0/8.7[4] 1.8/23.1[1] 1.0/1.9[1]  2592/500
-Matrix Compiler1: 16.09 KB object code size  10.1/4.3/[2.3]
-Matrix Compiler2: 15.31 KB object code size  1.5/2.8/[1.5]
+Thread vector: 17.6/6.9[4] 3.3/2.1[4] 0.7/2.1[1] 0.8/7.3[1]  2592/500
+Matrix Compiler1: 15.45 KB object code size  4.7/2.0/[1.1]
+Matrix Compiler2: 15.01 KB object code size  2.6/4.1/[1.3]
 
