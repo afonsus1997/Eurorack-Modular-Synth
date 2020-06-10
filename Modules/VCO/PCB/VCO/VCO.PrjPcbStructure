@@ -1,0 +1,3 @@
+Record=TopLevelDocument|FileName=DAC.SchDoc
+Record=SheetSymbol|SourceDocument=VCO_TOP.SchDoc|Designator=U_Micro|SchDesignator=U_Micro|FileName=Micro.SchDoc|SymbolType=Normal|RawFileName=Micro.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=DAC.SchDoc|Designator=U_Output_stages|SchDesignator=U_Output_stages|FileName=Output_stages.SchDoc|SymbolType=Normal|RawFileName=Output_stages.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
