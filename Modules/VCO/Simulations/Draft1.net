@@ -1,7 +1,0 @@
-* F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\Draft1.asc
-V2 N001 0 3.3 AC 0
-R1 N001 detect 100k
-R2 detect 0 10k
-.tran 1m
-.backanno
-.end

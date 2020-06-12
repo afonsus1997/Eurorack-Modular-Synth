@@ -1,8 +1,8 @@
-Circuit: * F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\CV_in.asc
+Circuit: * F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\FM_in.asc
 
 WARNING: Less than two connections to node NC_01.  This node is used by VSWEEP1.
 WARNING: Less than two connections to node NC_02.  This node is used by R4.
-WARNING: Less than two connections to node 3V3.  This node is used by V5.
+WARNING: Less than two connections to node NC_03.  This node is used by R7.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Increasing initial diagonal Gmin to 100
@@ -32,20 +32,20 @@ Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
 
-Date: Thu Jun 11 22:56:28 2020
-Total elapsed time: 0.155 seconds.
+Date: Fri Jun 12 01:12:22 2020
+Total elapsed time: 0.127 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2192
+totiter = 2193
 traniter = 416
 tranpoints = 209
 accept = 148
 rejected = 61
-matrix size = 59
-fillins = 140
+matrix size = 60
+fillins = 221
 solver = Normal
-Matrix Compiler1: 10.08 KB object code size  1.7/0.8/[0.5]
-Matrix Compiler2: 7.13 KB object code size  0.6/0.9/[0.5]
+Matrix Compiler1: 18.92 KB object code size  2.4/1.3/[0.7]
+Matrix Compiler2: 8.68 KB object code size  0.6/1.0/[0.4]
 
