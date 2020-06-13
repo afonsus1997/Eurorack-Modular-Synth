@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=SJM1 Old Footprint=SOLDERJUMPER_2WAY_OPEN_0603 New Footprint=SOLDERJUMPER_2WAY_OPEN_NOPASTE
+Change Component Footprint: Designator=SJM2 Old Footprint=SOLDERJUMPER_2WAY_OPEN_0603 New Footprint=SOLDERJUMPER_2WAY_OPEN_NOPASTE
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

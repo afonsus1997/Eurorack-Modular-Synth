@@ -1,0 +1,8 @@
+Added Component: Designator=SJM1(SOLDERJUMPER_2WAY_OPEN_0603)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=DGND Pin=SJM1-1
+Added Pin To Net: NetName=BOOT0 Pin=SJM1-2
+Added Pin To Net: NetName=3V3 Pin=SJM1-3
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
+Added Member To Class: ClassName=U_Micro Member=Component RM4 Header 4
+Added Member To Class: ClassName=U_Micro Member=Component SJM1 2-Way Solder Jumper

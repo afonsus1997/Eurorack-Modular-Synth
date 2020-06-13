@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GATE_IN_SWITCH Pin=UM1-29
+Removed Pin From Net: NetName=AUDIO_OUT_1_SWITCH Pin=UM1-57
+Removed Pin From Net: NetName=AUDIO_OUT_2_SWITCH Pin=UM1-58
+Removed Pin From Net: NetName=PITCH_CV_SWITCH Pin=UM1-59
+Removed Pin From Net: NetName=FM_CV_SWITCH Pin=UM1-61
+Removed Pin From Net: NetName=IN3_SWITCH Pin=UM1-62
+Added Pin To Net: NetName=IN3_SWITCH Pin=UM1-54
+Added Pin To Net: NetName=GATE_IN_SWITCH Pin=UM1-57
+Added Pin To Net: NetName=AUDIO_OUT_1_SWITCH Pin=UM1-58
+Added Pin To Net: NetName=AUDIO_OUT_2_SWITCH Pin=UM1-59
+Added Pin To Net: NetName=PITCH_CV_SWITCH Pin=UM1-61
+Added Pin To Net: NetName=FM_CV_SWITCH Pin=UM1-62
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

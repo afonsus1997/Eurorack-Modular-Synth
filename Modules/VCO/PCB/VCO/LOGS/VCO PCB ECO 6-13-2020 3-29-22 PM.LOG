@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=FM_CV_SWITCH Pin=UM1-58
+Removed Pin From Net: NetName=PITCH_CV_SWITCH Pin=UM1-59
+Added Pin To Net: NetName=PITCH_CV_SWITCH Pin=UM1-58
+Added Pin To Net: NetName=FM_CV_SWITCH Pin=UM1-59
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

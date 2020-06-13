@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=AGND Pin=CD11-1
+Removed Pin From Net: NetName=AGND Pin=CD21-1
+Removed Pin From Net: NetName=AGND Pin=CD31-1
+Removed Pin From Net: NetName=AGND Pin=CD41-1
+Removed Pin From Net: NetName=AGND Pin=CD51-1
+Removed Pin From Net: NetName=AGND Pin=CD61-1
+Removed Pin From Net: NetName=AGND Pin=RD11-1
+Removed Pin From Net: NetName=AGND Pin=RD21-1
+Removed Pin From Net: NetName=AGND Pin=RD31-1
+Removed Pin From Net: NetName=AGND Pin=RD41-1
+Removed Pin From Net: NetName=AGND Pin=RD51-1
+Removed Pin From Net: NetName=AGND Pin=RD61-1
+Added Pin To Net: NetName=DGND Pin=CD11-1
+Added Pin To Net: NetName=DGND Pin=CD21-1
+Added Pin To Net: NetName=DGND Pin=CD31-1
+Added Pin To Net: NetName=DGND Pin=CD41-1
+Added Pin To Net: NetName=DGND Pin=CD51-1
+Added Pin To Net: NetName=DGND Pin=CD61-1
+Added Pin To Net: NetName=DGND Pin=RD11-1
+Added Pin To Net: NetName=DGND Pin=RD21-1
+Added Pin To Net: NetName=DGND Pin=RD31-1
+Added Pin To Net: NetName=DGND Pin=RD41-1
+Added Pin To Net: NetName=DGND Pin=RD51-1
+Added Pin To Net: NetName=DGND Pin=RD61-1
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
