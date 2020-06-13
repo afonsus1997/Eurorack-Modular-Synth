@@ -1,0 +1,23 @@
+Added Component: Designator=UOS1(SOIC-8)
+Add component. Clean all parameters for all variants
+Added Component: Designator=UOS2(SOIC-8)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetCOS12_2 Pin=UOS1-1
+Added Pin To Net: NetName=NetCOS12_1 Pin=UOS1-2
+Added Pin To Net: NetName=AGND Pin=UOS1-3
+Added Pin To Net: NetName=-12 Pin=UOS1-4
+Added Pin To Net: NetName=AGND Pin=UOS1-5
+Added Pin To Net: NetName=NetCOS14_1 Pin=UOS1-6
+Added Pin To Net: NetName=NetCOS14_2 Pin=UOS1-7
+Added Pin To Net: NetName=+12 Pin=UOS1-8
+Added Pin To Net: NetName=NetCOS22_2 Pin=UOS2-1
+Added Pin To Net: NetName=NetCOS22_1 Pin=UOS2-2
+Added Pin To Net: NetName=AGND Pin=UOS2-3
+Added Pin To Net: NetName=-12 Pin=UOS2-4
+Added Pin To Net: NetName=AGND Pin=UOS2-5
+Added Pin To Net: NetName=NetCOS24_1 Pin=UOS2-6
+Added Pin To Net: NetName=NetCOS24_2 Pin=UOS2-7
+Added Pin To Net: NetName=+12 Pin=UOS2-8
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
+Added Member To Class: ClassName=U_Output_stages Member=Component UOS1 Dual NE5532 opamp
+Added Member To Class: ClassName=U_Output_stages Member=Component UOS2 Dual NE5532 opamp

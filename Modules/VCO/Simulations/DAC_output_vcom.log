@@ -1,6 +1,7 @@
 Circuit: * F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\DAC_output_vcom.asc
 
-WARNING: Less than two connections to node NC_01.  This node is used by VSWEEP.
+Number of points per decade reduced from 10000 to 7726.
+WARNING: Less than two connections to node NC_01.  This node is used by V1.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -65,41 +66,24 @@ Source Step = 63.6364%
 Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-N-Period=100
-Fourier components of V(n002)
-DC component:-0.00191978
-
-Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
- Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
-    1   	5.000e+03	4.886e+00	1.000e+00	  159.66°	    0.00°
-    2   	1.000e+04	2.395e-02	4.900e-03	  -98.78°	 -258.44°
-    3   	1.500e+04	2.551e-02	5.221e-03	 -111.97°	 -271.63°
-    4   	2.000e+04	2.444e-02	5.002e-03	 -126.58°	 -286.24°
-    5   	2.500e+04	2.170e-02	4.441e-03	 -138.54°	 -298.20°
-    6   	3.000e+04	1.878e-02	3.843e-03	 -147.08°	 -306.74°
-    7   	3.500e+04	1.628e-02	3.331e-03	 -153.04°	 -312.70°
-    8   	4.000e+04	1.426e-02	2.917e-03	 -157.28°	 -316.95°
-    9   	4.500e+04	1.264e-02	2.587e-03	 -160.41°	 -320.07°
-   10   	5.000e+04	1.134e-02	2.320e-03	 -162.78°	 -322.44°
-Total Harmonic Distortion: 1.193575%(3.270269%)
+Note: .fourier statements are only valid with a .tran command.
+      No Fourier analysis performed.
 
 
-
-Date: Wed Jun 10 13:03:50 2020
-Total elapsed time: 8.147 seconds.
+Date: Fri Jun 12 21:58:54 2020
+Total elapsed time: 2.011 seconds.
 
 tnom = 27
 temp = 27
-method = modified trap
-totiter = 212280
-traniter = 203520
-tranpoints = 100611
-accept = 100450
-rejected = 161
-matrix size = 155
-fillins = 241
+method = trap
+totiter = 8852
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 156
+fillins = 227
 solver = Normal
-Thread vector: 12.3/9.5[4] 3.2/2.2[4] 0.7/1.8[1] 0.6/9.9[1]  2592/500
-Matrix Compiler1: 15.45 KB object code size  4.4/1.7/[0.9]
-Matrix Compiler2: 15.01 KB object code size  2.3/2.8/[0.8]
+Matrix Compiler1:     880 opcodes
+Matrix Compiler2: off  [1.4]/2.5/1.9
 

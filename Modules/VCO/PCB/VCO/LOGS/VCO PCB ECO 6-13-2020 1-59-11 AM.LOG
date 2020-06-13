@@ -1,0 +1,27 @@
+Added Component: Designator=RDAC1:4(RESARRAY(4x0603))
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "CTS Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "742C083121JP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206 CTS Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/742C083121JP/CTS%20Resistor%20Products/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=I2S2_CK Pin=RDAC1:4-5
+Added Pin To Net: NetName=I2S2_SD Pin=RDAC1:4-6
+Added Pin To Net: NetName=I2S2_WS Pin=RDAC1:4-7
+Added Pin To Net: NetName=DAC_CLK Pin=RDAC1:4-8
+Added Pin To Net: NetName=NetRDAC1:4_1 Pin=RDAC1:4-1
+Added Pin To Net: NetName=NetRDAC1:4_1 Pin=UDAC1-5
+Added Net: Name=NetRDAC1:4_1
+Added Pin To Net: NetName=NetRDAC1:4_2 Pin=RDAC1:4-2
+Added Pin To Net: NetName=NetRDAC1:4_2 Pin=UDAC1-8
+Added Net: Name=NetRDAC1:4_2
+Added Pin To Net: NetName=NetRDAC1:4_3 Pin=RDAC1:4-3
+Added Pin To Net: NetName=NetRDAC1:4_3 Pin=UDAC1-6
+Added Net: Name=NetRDAC1:4_3
+Added Pin To Net: NetName=NetRDAC1:4_4 Pin=RDAC1:4-4
+Added Pin To Net: NetName=NetRDAC1:4_4 Pin=UDAC1-7
+Added Net: Name=NetRDAC1:4_4
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
+Added Member To Class: ClassName=U_DAC Member=Component RDAC1:4 742C083121JP

@@ -1,0 +1,51 @@
+Removed Pin From Net: NetName=AGND Pin=RM3-2
+Removed Pin From Net: NetName=Pot1 Pin=RM3-3
+Removed Pin From Net: NetName=AGND Pin=RM4-2
+Removed Pin From Net: NetName=Pot2 Pin=RM4-3
+Removed Pin From Net: NetName=AGND Pin=RM5-2
+Removed Pin From Net: NetName=Pot3 Pin=RM5-3
+Removed Pin From Net: NetName=AGND Pin=RM6-2
+Removed Pin From Net: NetName=Pot4 Pin=RM6-3
+Change Component Footprint: Designator=RM3 Old Footprint=POT-rv09 New Footprint=HDR1X3
+Change Component Footprint: Designator=RM4 Old Footprint=POT-rv09 New Footprint=HDR1X3
+Change Component Footprint: Designator=RM5 Old Footprint=POT-rv09 New Footprint=HDR1X3
+Change Component Footprint: Designator=RM6 Old Footprint=POT-rv09 New Footprint=HDR1X3
+Change Component Comment : Designator=RM3 Old Comment=RPot New Comment=Header 3
+Change Component Comment : Designator=RM4 Old Comment=RPot New Comment=Header 3
+Change Component Comment : Designator=RM5 Old Comment=RPot New Comment=Header 3
+Change Component Comment : Designator=RM6 Old Comment=RPot New Comment=Header 3
+Change component parameters: Designator = "RM3"; Footprint = "HDR1X3"; UniqueID = "\CHKACBPN\BVSNMPJO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "RM4"; Footprint = "HDR1X3"; UniqueID = "\CHKACBPN\ZVXWKNWF"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "RM5"; Footprint = "HDR1X3"; UniqueID = "\CHKACBPN\PPPIJQGL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "RM6"; Footprint = "HDR1X3"; UniqueID = "\CHKACBPN\LDFHPSUW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Pot1 Pin=RM3-2
+Added Pin To Net: NetName=AGND Pin=RM3-3
+Added Pin To Net: NetName=Pot2 Pin=RM4-2
+Added Pin To Net: NetName=AGND Pin=RM4-3
+Added Pin To Net: NetName=Pot3 Pin=RM5-2
+Added Pin To Net: NetName=AGND Pin=RM5-3
+Added Pin To Net: NetName=Pot4 Pin=RM6-2
+Added Pin To Net: NetName=AGND Pin=RM6-3
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
+Added Room: Name=U_DAC
+Added Room: Name=U_Input_stages
+Added Room: Name=U_Interfaces
+Added Room: Name=U_Micro
+Added Room: Name=U_Output_stages
+Added Room: Name=U_Power

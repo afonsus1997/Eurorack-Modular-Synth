@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=DAC_CLK_IC Pin=RDAC1:4-1
+Removed Pin From Net: NetName=I2S2_SD_IC Pin=RDAC1:4-2
+Removed Pin From Net: NetName=I2S2_CK_IC Pin=RDAC1:4-3
+Removed Pin From Net: NetName=I2S2_WS_IC Pin=RDAC1:4-4
+Removed Pin From Net: NetName=I2S2_WS Pin=RDAC1:4-5
+Removed Pin From Net: NetName=I2S2_CK Pin=RDAC1:4-6
+Removed Pin From Net: NetName=I2S2_SD Pin=RDAC1:4-7
+Removed Pin From Net: NetName=DAC_CLK Pin=RDAC1:4-8
+Added Pin To Net: NetName=I2S2_WS_IC Pin=RDAC1:4-1
+Added Pin To Net: NetName=I2S2_CK_IC Pin=RDAC1:4-2
+Added Pin To Net: NetName=I2S2_SD_IC Pin=RDAC1:4-3
+Added Pin To Net: NetName=DAC_CLK_IC Pin=RDAC1:4-4
+Added Pin To Net: NetName=DAC_CLK Pin=RDAC1:4-5
+Added Pin To Net: NetName=I2S2_SD Pin=RDAC1:4-6
+Added Pin To Net: NetName=I2S2_CK Pin=RDAC1:4-7
+Added Pin To Net: NetName=I2S2_WS Pin=RDAC1:4-8
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

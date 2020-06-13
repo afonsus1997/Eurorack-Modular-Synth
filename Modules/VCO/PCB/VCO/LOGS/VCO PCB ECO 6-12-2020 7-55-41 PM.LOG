@@ -1,0 +1,11 @@
+Added Component: Designator=DP1(DO-41)
+Add component. Clean all parameters for all variants
+Added Component: Designator=DP2(DO-41)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+12 Pin=DP1-1
+Added Pin To Net: NetName=NetDP1_2 Pin=DP1-2
+Added Pin To Net: NetName=NetDP2_1 Pin=DP2-1
+Added Pin To Net: NetName=-12 Pin=DP2-2
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
+Added Member To Class: ClassName=U_Power Member=Component DP1 Diode
+Added Member To Class: ClassName=U_Power Member=Component DP2 Diode

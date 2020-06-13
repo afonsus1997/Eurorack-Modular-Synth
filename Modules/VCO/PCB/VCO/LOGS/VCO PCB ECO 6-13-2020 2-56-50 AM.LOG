@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=Pot2 Pin=UM1-14
+Removed Pin From Net: NetName=LED5 Pin=UM1-15
+Removed Pin From Net: NetName=LED6 Pin=UM1-30
+Added Pin To Net: NetName=LED5 Pin=UM1-14
+Added Pin To Net: NetName=LED6 Pin=UM1-15
+Added Pin To Net: NetName=Pot2 Pin=UM1-44
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

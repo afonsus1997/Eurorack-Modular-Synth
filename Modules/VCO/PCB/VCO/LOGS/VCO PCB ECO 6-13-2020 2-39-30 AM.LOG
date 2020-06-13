@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=DAC_FORMAT Pin=UM1-30
+Removed Pin From Net: NetName=LED6 Pin=UM1-40
+Added Pin To Net: NetName=LED6 Pin=UM1-30
+Added Pin To Net: NetName=DAC_FORMAT Pin=UM1-40
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

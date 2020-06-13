@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=UP1 Old Footprint=SOT-223-3 New Footprint=SOT-223-3 - REG
+Change Component Footprint: Designator=UP2 Old Footprint=SOT-223-3 New Footprint=SOT-223-3 - REG
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

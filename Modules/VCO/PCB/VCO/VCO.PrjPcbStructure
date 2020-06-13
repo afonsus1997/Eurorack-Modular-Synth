@@ -1,3 +1,8 @@
-Record=TopLevelDocument|FileName=DAC.SchDoc
+Record=TopLevelDocument|FileName=VCO_TOP.SchDoc
+Record=SheetSymbol|SourceDocument=VCO_TOP.SchDoc|Designator=U_ADC|SchDesignator=U_ADC|FileName=ADC.SchDoc|SymbolType=Normal|RawFileName=ADC.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=VCO_TOP.SchDoc|Designator=U_DAC|SchDesignator=U_DAC|FileName=DAC.SchDoc|SymbolType=Normal|RawFileName=DAC.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=VCO_TOP.SchDoc|Designator=U_Interfaces|SchDesignator=U_Interfaces|FileName=Interfaces.SchDoc|SymbolType=Normal|RawFileName=Interfaces.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=VCO_TOP.SchDoc|Designator=U_Micro|SchDesignator=U_Micro|FileName=Micro.SchDoc|SymbolType=Normal|RawFileName=Micro.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=VCO_TOP.SchDoc|Designator=U_Power|SchDesignator=U_Power|FileName=Power.SchDoc|SymbolType=Normal|RawFileName=Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=DAC.SchDoc|Designator=U_Output_stages|SchDesignator=U_Output_stages|FileName=Output_stages.SchDoc|SymbolType=Normal|RawFileName=Output_stages.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=ADC.SchDoc|Designator=U_Input_stages|SchDesignator=U_Input_stages|FileName=Input_stages.SchDoc|SymbolType=Normal|RawFileName=Input_stages.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
