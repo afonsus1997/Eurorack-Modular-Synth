@@ -1,8 +1,11 @@
 # VCO
 
-Full DDS VCO module
+Full DDS VCO module 
 
+#### Dimensions
 
+* 14HP (128.5x70.8mm)
+  * PCB size (110x69mm)
 
 ### Main features
 

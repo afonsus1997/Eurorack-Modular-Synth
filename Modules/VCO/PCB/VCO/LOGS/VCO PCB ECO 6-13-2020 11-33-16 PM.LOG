@@ -1,0 +1,9 @@
+Added Component: Designator=SM2(Rotary Encoder)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=ENC_A Pin=SM2-1
+Added Pin To Net: NetName=ENC_B Pin=SM2-2
+Added Pin To Net: NetName=DGND Pin=SM2-3
+Added Pin To Net: NetName=ENC_SW Pin=SM2-4
+Added Pin To Net: NetName=DGND Pin=SM2-5
+Added Member To Class: ClassName=U_Micro Member=Component RM5 
+Added Member To Class: ClassName=U_Micro Member=Component SM2 ENCODER

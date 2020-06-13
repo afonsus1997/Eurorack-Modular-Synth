@@ -1,0 +1,9 @@
+Added Pin To Net: NetName=ENC_A Pin=UM1-16
+Added Net: Name=ENC_A
+Added Pin To Net: NetName=ENC_B Pin=UM1-17
+Added Net: Name=ENC_B
+Added Pin To Net: NetName=ENC_SW Pin=UM1-45
+Added Net: Name=ENC_SW
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
+Added Member To Class: ClassName=U_Micro Member=Component RM3 
+Added Member To Class: ClassName=U_Micro Member=Component RM4 

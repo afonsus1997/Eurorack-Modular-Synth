@@ -1,0 +1,63 @@
+Removed Pin From Net: NetName=AGND Pin=*-5
+Removed Pin From Net: NetName=Net*_6 Pin=*-6
+Removed Pin From Net: NetName=PITCH_CV_OUT Pin=*-7
+Removed Pin From Net: NetName=AGND Pin=*-9
+Removed Pin From Net: NetName=Net*_12 Pin=*-12
+Removed Pin From Net: NetName=PWM_CV_OUT Pin=*-14
+Removed Pin From Net: NetName=AGND Pin=*?-5
+Removed Pin From Net: NetName=Net*?_6 Pin=*?-6
+Removed Pin From Net: NetName=FM_CV_OUT Pin=*?-7
+Removed Member From Class: ClassName=U_Input_stages Member=*?
+Change Component Designator: OldDesignator=* NewDesignator=UIS2
+Added Component: Designator=CIS34(C 0603 / 1608)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "asdasd"; VariantName = "[No Variations]"
+Added Component: Designator=CIS35(C 0603 / 1608)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "asdasd"; VariantName = "[No Variations]"
+Added Component: Designator=UIS1(DIP-14)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=AGND Pin=CIS34-1
+Added Pin To Net: NetName=+12 Pin=CIS34-2
+Added Pin To Net: NetName=AGND Pin=CIS35-1
+Added Pin To Net: NetName=-12 Pin=CIS35-2
+Added Pin To Net: NetName=AGND Pin=UIS1-3
+Added Pin To Net: NetName=+12 Pin=UIS1-4
+Added Pin To Net: NetName=AGND Pin=UIS1-5
+Added Pin To Net: NetName=PWM_CV_OUT Pin=UIS1-8
+Added Pin To Net: NetName=AGND Pin=UIS1-9
+Added Pin To Net: NetName=Net*_12 Pin=UIS1-10
+Added Pin To Net: NetName=-12 Pin=UIS1-11
+Added Pin To Net: NetName=Net*_6 Pin=UIS1-12
+Added Pin To Net: NetName=AGND Pin=UIS1-13
+Added Pin To Net: NetName=PITCH_CV_OUT Pin=UIS1-14
+Added Pin To Net: NetName=Net*?_2 Pin=UIS2-2
+Added Pin To Net: NetName=Net*?_6 Pin=UIS2-12
+Added Pin To Net: NetName=FM_CV_OUT Pin=UIS2-14
+Change Net Name : Old Net Name=Net*?_2 New Net Name=NetRIS31_2
+Change Net Name : Old Net Name=Net*?_6 New Net Name=NetCIS31_1
+Change Net Name : Old Net Name=Net*_6 New Net Name=NetCIS11_1
+Change Net Name : Old Net Name=Net*_12 New Net Name=NetCIS21_1
+Added Pin To Net: NetName=NetRIS11_2 Pin=RIS11-2
+Added Pin To Net: NetName=NetRIS11_2 Pin=RIS12-1
+Added Pin To Net: NetName=NetRIS11_2 Pin=UIS1-2
+Added Net: Name=NetRIS11_2
+Added Pin To Net: NetName=NetRIS12_2 Pin=RIS12-2
+Added Pin To Net: NetName=NetRIS12_2 Pin=RIS13-1
+Added Pin To Net: NetName=NetRIS12_2 Pin=UIS1-1
+Added Net: Name=NetRIS12_2
+Added Pin To Net: NetName=NetRIS21_2 Pin=RIS21-2
+Added Pin To Net: NetName=NetRIS21_2 Pin=RIS22-1
+Added Pin To Net: NetName=NetRIS21_2 Pin=UIS1-6
+Added Net: Name=NetRIS21_2
+Added Pin To Net: NetName=NetRIS22_2 Pin=RIS22-2
+Added Pin To Net: NetName=NetRIS22_2 Pin=RIS23-1
+Added Pin To Net: NetName=NetRIS22_2 Pin=UIS1-7
+Added Net: Name=NetRIS22_2
+Added Pin To Net: NetName=NetRIS32_2 Pin=RIS32-2
+Added Pin To Net: NetName=NetRIS32_2 Pin=RIS33-1
+Added Pin To Net: NetName=NetRIS32_2 Pin=UIS2-1
+Added Net: Name=NetRIS32_2
+Added Member To Class: ClassName=U_Input_stages Member=Component CIS34 0.1u
+Added Member To Class: ClassName=U_Input_stages Member=Component CIS35 0.1u
+Added Member To Class: ClassName=U_Input_stages Member=Component UIS1 TL074

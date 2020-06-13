@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=Pot1 Pin=PMR3:6-1
+Removed Pin From Net: NetName=Pot2 Pin=PMR3:6-2
+Removed Pin From Net: NetName=Pot3 Pin=PMR3:6-3
+Removed Pin From Net: NetName=Pot4 Pin=PMR3:6-4
+Removed Pin From Net: NetName=3V3 Pin=PMR3:6P-1
+Removed Pin From Net: NetName=DGND Pin=PMR3:6P-2
+Removed Member From Class: ClassName=U_Micro Member=PMR3:6
+Removed Member From Class: ClassName=U_Micro Member=PMR3:6P
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074

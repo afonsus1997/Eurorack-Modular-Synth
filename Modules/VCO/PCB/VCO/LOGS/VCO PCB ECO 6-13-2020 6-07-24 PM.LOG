@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=RM3 Old Footprint=SMD_POT_3x3mm New Footprint=POT-rv09
+Change Component Footprint: Designator=RM4 Old Footprint=SMD_POT_3x3mm New Footprint=POT-rv09
+Change Component Footprint: Designator=RM5 Old Footprint=SMD_POT_3x3mm New Footprint=POT-rv09
+Change Component Footprint: Designator=RM6 Old Footprint=SMD_POT_3x3mm New Footprint=POT-rv09
+Added Member To Class: ClassName=U_Input_stages Member=Component *? TL074
+Added Member To Class: ClassName=U_Micro Member=Component RM3 
+Added Member To Class: ClassName=U_Micro Member=Component RM4 

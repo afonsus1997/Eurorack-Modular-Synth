@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=FM_CV_OUT Pin=UIS2-8
+Removed Pin From Net: NetName=AGND Pin=UIS2-9
+Removed Pin From Net: NetName=NetCIS31_1 Pin=UIS2-10
+Added Pin To Net: NetName=FM_CV_OUT Pin=UIS1-8
+Added Pin To Net: NetName=AGND Pin=UIS1-9
+Added Pin To Net: NetName=NetCIS31_1 Pin=UIS1-10

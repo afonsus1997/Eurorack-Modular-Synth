@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetRIS12_2 Pin=UIS2-1
+Removed Pin From Net: NetName=NetRIS11_2 Pin=UIS2-2
+Removed Pin From Net: NetName=AGND Pin=UIS2-3
+Removed Pin From Net: NetName=NetCIS11_1 Pin=UIS2-12
+Removed Pin From Net: NetName=AGND Pin=UIS2-13
+Removed Pin From Net: NetName=PITCH_CV_OUT Pin=UIS2-14
+Added Pin To Net: NetName=AGND Pin=UIS2-5
+Added Pin To Net: NetName=NetRIS11_2 Pin=UIS2-6
+Added Pin To Net: NetName=NetRIS12_2 Pin=UIS2-7
+Added Pin To Net: NetName=PITCH_CV_OUT Pin=UIS2-8
+Added Pin To Net: NetName=AGND Pin=UIS2-9
+Added Pin To Net: NetName=NetCIS11_1 Pin=UIS2-10
