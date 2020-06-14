@@ -1,0 +1,47 @@
+Removed Pin From Net: NetName=+12 Pin=DP1-1
+Removed Pin From Net: NetName=-12 Pin=DP2-2
+Removed Pin From Net: NetName=NetDP1_2 Pin=PP1-1
+Removed Pin From Net: NetName=NetDP1_2 Pin=PP1-2
+Removed Pin From Net: NetName=GND Pin=PP1-3
+Removed Pin From Net: NetName=GND Pin=PP1-5
+Removed Pin From Net: NetName=GND Pin=PP1-7
+Removed Pin From Net: NetName=NetDP2_1 Pin=PP1-9
+Removed Pin From Net: NetName=NetDP2_1 Pin=PP1-10
+Change Component Comment : Designator=DP1 Old Comment=Diode New Comment=1N5819
+Change Component Comment : Designator=DP2 Old Comment=Diode New Comment=1N5819
+Added Component: Designator=LP1(RES0805R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_IEC"; Value = "1005"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEITA"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "0402-A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10mH"; VariantName = "[No Variations]"
+Added Component: Designator=LP2(RES0805R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_IEC"; Value = "1005"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEITA"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Inductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "0402-A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10mH"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=LP1-1
+Added Pin To Net: NetName=NetDP1_2 Pin=LP1-2
+Added Pin To Net: NetName=-12 Pin=LP2-1
+Added Pin To Net: NetName=NetDP2_1 Pin=LP2-2
+Added Pin To Net: NetName=NetDP1_1 Pin=DP1-1
+Added Pin To Net: NetName=NetDP1_1 Pin=PP1-1
+Added Pin To Net: NetName=NetDP1_1 Pin=PP1-2
+Added Net: Name=NetDP1_1
+Added Pin To Net: NetName=NetDP2_2 Pin=DP2-2
+Added Pin To Net: NetName=NetDP2_2 Pin=PP1-9
+Added Pin To Net: NetName=NetDP2_2 Pin=PP1-10
+Added Net: Name=NetDP2_2
+Added Member To Class: ClassName=U_Power Member=Component LP1 Ferrite
+Added Member To Class: ClassName=U_Power Member=Component LP2 Ferrite
