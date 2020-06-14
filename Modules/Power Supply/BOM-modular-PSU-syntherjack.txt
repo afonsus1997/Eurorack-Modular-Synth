@@ -1,0 +1,38 @@
+Partlist for Euro Modular Synthesizer PSU
+
+Qty Value     		        Parts                                                                                                             
+
+Capacitors
+                                                                                                          
+4   1000u/25V       		C1, C2, C3, C4 
+2   100n       				C5, C6 
+2   10u/25V      			C7, C8 
+2   1u/25V (tantalium)   	C9, C10                                                                                                           
+                                                                                                              
+Resistors 
+
+4   2K 1%            		R1, R3, R8, R9     
+2   240R 1%       			R2, R4                                                                                                           
+2   100R          			R5, R6
+1   14D391          		R7    
+
+Semiconductors
+
+2   1N4007          		D1, D2                                                                                                   
+1   KBL06           		B1                                                                                                                
+1   LM317T          		IC1                                                                                                               
+1   LM337T          		IC2  
+2   3mm LED        			LED1, LED2 
+
+Other
+
+13  6,3mm connector  +V-OUT1, +V-OUT2, +V-OUT3, -V-OUT1, -V-OUT2, -V-OUT3, AC-IN1, AC-IN2, AC-IN3, AC-IN4, GND-OUT1, GND-OUT2, GND-OUT3
+2	Heatsink 6400B-P3 AAVID THERMALLOY (or similar that fits)
+1	Toroidal transformer 60VA, 2x14V
+1	100x160mm one-sided PCB
+
+Notes:
+
+Use C1/C2/C3/C4 1000u/25V or C1/C3 2200u/25V.
+                                                                                                            
+                                                                             
