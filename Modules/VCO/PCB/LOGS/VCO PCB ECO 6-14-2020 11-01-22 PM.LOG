@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=I2S2_WS_IC Pin=TPDAC1-1
+Removed Pin From Net: NetName=I2S2_CK_IC Pin=TPDAC2-1
+Removed Pin From Net: NetName=I2S2_SD_IC Pin=TPDAC3-1
+Removed Pin From Net: NetName=DAC_CLK_IC Pin=TPDAC4-1
+Added Pin To Net: NetName=I2S2_WS Pin=TPDAC1-1
+Added Pin To Net: NetName=I2S2_CK Pin=TPDAC2-1
+Added Pin To Net: NetName=I2S2_SD Pin=TPDAC3-1
+Added Pin To Net: NetName=DAC_CLK Pin=TPDAC4-1

@@ -16,7 +16,6 @@ Full DDS VCO module
   * PWM in
 * Output
   * Dual audio output with selectable waveforms
-  * Sync out
 
 
 

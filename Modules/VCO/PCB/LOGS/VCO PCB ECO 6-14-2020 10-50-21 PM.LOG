@@ -1,0 +1,84 @@
+Added Component: Designator=TPADC1(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPADC2(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPADC3(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPDAC1(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPDAC2(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPDAC3(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPDAC4(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPDAC5(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPDAC6(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS11(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS12(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS13(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS14(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS21(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS22(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS23(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPOS24(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPP1(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPP2(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPP3(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPP4(Test POint)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=ADC_CLK Pin=TPADC1-1
+Added Pin To Net: NetName=ADC_MOSI Pin=TPADC2-1
+Added Pin To Net: NetName=ADC_MISO Pin=TPADC3-1
+Added Pin To Net: NetName=I2S2_WS_IC Pin=TPDAC1-1
+Added Pin To Net: NetName=I2S2_CK_IC Pin=TPDAC2-1
+Added Pin To Net: NetName=I2S2_SD_IC Pin=TPDAC3-1
+Added Pin To Net: NetName=DAC_CLK_IC Pin=TPDAC4-1
+Added Pin To Net: NetName=OUT_1 Pin=TPDAC5-1
+Added Pin To Net: NetName=OUT_2 Pin=TPDAC6-1
+Added Pin To Net: NetName=NetCDAC1_2 Pin=TPOS11-1
+Added Pin To Net: NetName=NetCOS12_2 Pin=TPOS12-1
+Added Pin To Net: NetName=NetCOS13_2 Pin=TPOS13-1
+Added Pin To Net: NetName=AUDIO_OUT_1 Pin=TPOS14-1
+Added Pin To Net: NetName=NetCDAC2_2 Pin=TPOS21-1
+Added Pin To Net: NetName=NetCOS22_2 Pin=TPOS22-1
+Added Pin To Net: NetName=NetCOS23_2 Pin=TPOS23-1
+Added Pin To Net: NetName=AUDIO_OUT_2 Pin=TPOS24-1
+Added Pin To Net: NetName=+12 Pin=TPP1-1
+Added Pin To Net: NetName=-12 Pin=TPP2-1
+Added Pin To Net: NetName=3V3 Pin=TPP3-1
+Added Pin To Net: NetName=+5 Pin=TPP4-1
+Added Member To Class: ClassName=U_ADC Member=Component TPADC1 Test Point
+Added Member To Class: ClassName=U_ADC Member=Component TPADC2 Test Point
+Added Member To Class: ClassName=U_ADC Member=Component TPADC3 Test Point
+Added Member To Class: ClassName=U_DAC Member=Component TPDAC1 Test Point
+Added Member To Class: ClassName=U_DAC Member=Component TPDAC2 Test Point
+Added Member To Class: ClassName=U_DAC Member=Component TPDAC3 Test Point
+Added Member To Class: ClassName=U_DAC Member=Component TPDAC4 Test Point
+Added Member To Class: ClassName=U_DAC Member=Component TPDAC5 Test Point
+Added Member To Class: ClassName=U_DAC Member=Component TPDAC6 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS11 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS12 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS13 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS14 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS21 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS22 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS23 Test Point
+Added Member To Class: ClassName=U_Output_stages Member=Component TPOS24 Test Point
+Added Member To Class: ClassName=U_Power Member=Component TPP1 Test Point
+Added Member To Class: ClassName=U_Power Member=Component TPP2 Test Point
+Added Member To Class: ClassName=U_Power Member=Component TPP3 Test Point
+Added Member To Class: ClassName=U_Power Member=Component TPP4 Test Point

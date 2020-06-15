@@ -1,0 +1,114 @@
+Change Component Comment : Designator=CM1 Old Comment=18pF New Comment=100u
+Change component parameters: Designator = "CADC1"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\PLNUDGXU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CADC2"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\EVFAVLOJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "10u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CADC3"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\OLGJUUNI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CADC4"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\GECVNDYB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CDAC4"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\DLVBPCOE"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CIS32"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\RVTKZFAR\MOLLCGSN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CIS33"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\RVTKZFAR\DROTMTNM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CIS34"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\RVTKZFAR\UEVMWAXJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CIS35"; Footprint = "C 0603 / 1608"; UniqueID = "\CXRASBTT\RVTKZFAR\BOOVPVCD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CM1"; Footprint = "C 0603 / 1608"; UniqueID = "\CHKACBPN\HVVMMYYK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CM2"; Footprint = "C 0603 / 1608"; UniqueID = "\CHKACBPN\OXHDQUSM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "18p"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CM3"; Footprint = "C 0603 / 1608"; UniqueID = "\CHKACBPN\KAAMHTKU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "18p"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CM4"; Footprint = "C 0603 / 1608"; UniqueID = "\CHKACBPN\DHXPVXBN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CM5"; Footprint = "C 0603 / 1608"; UniqueID = "\CHKACBPN\IQTDYEIX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "10n"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS11"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\BFIXHZOC"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "3.9n"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS12"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\CGEMMXVB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "1n"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS14"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\VVLGDANL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "47p"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS15"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\LHJHOJOD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS16"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\LLZSNEEH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS21"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\XZFXOHQN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "3.9n"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS22"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\ZTPPMBOQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "1n"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS24"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\FEMIQLZK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "47p"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS25"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\WWUSGGUI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters: Designator = "COS26"; Footprint = "C 0603 / 1608"; UniqueID = "\GLFWHFDD\KXQCROXW\FJJPHHPY"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=TPIS11(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS12(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS13(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS21(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS22(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS23(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS31(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS32(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS33(Test POint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TPIS34(Test POint)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=PITCH_CV Pin=TPIS11-1
+Added Pin To Net: NetName=NetRIS12_2 Pin=TPIS12-1
+Added Pin To Net: NetName=PITCH_CV_OUT Pin=TPIS13-1
+Added Pin To Net: NetName=IN3 Pin=TPIS21-1
+Added Pin To Net: NetName=NetRIS22_2 Pin=TPIS22-1
+Added Pin To Net: NetName=PWM_CV_OUT Pin=TPIS23-1
+Added Pin To Net: NetName=FM_CV Pin=TPIS31-1
+Added Pin To Net: NetName=NetRIS32_2 Pin=TPIS32-1
+Added Pin To Net: NetName=FM_CV_OUT Pin=TPIS33-1
+Added Pin To Net: NetName=NetRIS35_3 Pin=TPIS34-1
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS11 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS12 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS13 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS21 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS22 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS23 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS31 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS32 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS33 Test Point
+Added Member To Class: ClassName=U_Input_stages Member=Component TPIS34 Test Point
+Added Room: Name=U_Input_stages
