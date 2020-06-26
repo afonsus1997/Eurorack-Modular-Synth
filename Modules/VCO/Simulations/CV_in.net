@@ -1,0 +1,28 @@
+* F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Simulations\CV_in.asc
+XU1 0 N006 VCC VEE N007 TL072
+V1 VCC 0 12
+V2 0 VEE 12
+R1 N006 N008 100k
+R2 N007 N006 41.2k
+Vsweep1 N008 0 AC 1
+V3 NC_01 0 SINE(5 5 1) AC 10
+R4 0 NC_02 100k
+R3 N005 N007 24.9k
+R5 out N005 24.9k
+C1 out N005 500p
+V5 3v3 0 3.3
+XU2 0 N005 VCC VEE out TL072
+XU3 0 N001 VCC VEE N002 TL072
+R6 N001 N004 100k
+R7 N002 N001 41.2k
+Vsweep2 N004 0 AC 1
+V7 NC_03 0 SINE(5 5 1) AC 10
+R8 N003 N002 24.9k
+R9 out_nocap N003 24.9k
+XU4 0 N003 VCC VEE out_nocap TL072
+.inc TL072.mod
+.ac dec 10000 10 1G
+* .tran 0 5 0 100m
+.inc TL072.mod
+.backanno
+.end
