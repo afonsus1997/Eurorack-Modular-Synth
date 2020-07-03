@@ -1,0 +1,18 @@
+[INFO ] 2020-06-30 19:59:46,581 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Start Cube IDE services
+[INFO ] 2020-06-30 19:59:46,589 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Cube IDE services are relying on '1.0.2.3' product version and '20190708-0539(UTC)' build version 
+[INFO ] 2020-06-30 19:59:46,589 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Analyze Cube IDE services command line
+[INFO ] 2020-06-30 19:59:46,595 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Look for Cube IDE service type
+[INFO ] 2020-06-30 19:59:46,616 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Use Cube IDE service: 'Mx generate project service'
+[INFO ] 2020-06-30 19:59:46,616 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Look for Cube IDE service option(s)
+[WARN ] 2020-06-30 19:59:46,616 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Argument '-rmiServerPort' is ignored
+[WARN ] 2020-06-30 19:59:46,616 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Argument '6543' is ignored
+[INFO ] 2020-06-30 19:59:46,616 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Check Cube IDE service option(s)
+[INFO ] 2020-06-30 19:59:46,616 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Run Cube IDE service
+[ERROR] 2020-06-30 19:59:49,171 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Fail to create / get project 'Firmware' within workspace 'F:/Documents/GitHub/Eurorack-Modular-Synth/Modules/VCO'
+[ERROR] 2020-06-30 19:59:49,175 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Fail to complete service execution. Return code is '306'. Related message to is 'Fail to create / get project 'Firmware' within workspace 'F:/Documents/GitHub/Eurorack-Modular-Synth/Modules/VCO''. 
+[INFO ] 2020-06-30 19:59:49,175 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - Service 'Mx generate project service' usage is:
+[INFO ] 2020-06-30 19:59:49,175 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - 	'-source / -src (Optional)' : Project source. Supported ones are: '[CUBE, MANAGED, NONMANAGED]'
+[INFO ] 2020-06-30 19:59:49,175 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - 	'-cubeScratchFile / -scratch ' : Cube scratch file
+[INFO ] 2020-06-30 19:59:49,175 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - 	'-buildType (Optional)' : Build type. Supported ones are: '[EXEC, LIB]'
+[INFO ] 2020-06-30 19:59:49,175 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - 	'-lang (Optional)' : Project language. Supported ones are: '[CPP, C]'
+[INFO ] 2020-06-30 19:59:49,175 com.st.stm32cube.ide.common.services.mx.rcp.CubeIdeServices - End Cube IDE services
