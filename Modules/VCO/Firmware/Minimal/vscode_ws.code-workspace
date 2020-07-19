@@ -7,6 +7,43 @@
 	"settings": {
 		"stm32-for-vscode.armToolchainPath": "",
 		"cortex-debug.armToolchainPath": "",
-		"stm32-for-vscode.makePath": "make"
+		"stm32-for-vscode.makePath": "make",
+		"stm32-for-vscode.openocdPath": "C:\\Program Files (x86)\\OpenOCD\\bin\\openocd",
+		"cortex-debug.openocdPath": "C:\\Program Files (x86)\\OpenOCD\\bin\\openocd"
+	},
+	"launch": {
+		"configurations": [
+			{
+				"showDevDebugOutput": false,
+				"cwd": "${workspaceRoot}",
+				"executable": "./build/Firmware.elf",
+				"name": "Debug STM32",
+				"request": "launch",
+				"type": "cortex-debug",
+				"servertype": "openocd",
+				"preLaunchTask": "Build STM",
+				"interface": "swd",
+				"device": "stlink",
+				"configFiles": [
+					"interface/stlink-v2-1.cfg",
+					"target/stm32f1x.cfg"
+				]
+			},
+			{
+				"showDevDebugOutput": true,
+				"cwd": "${workspaceRoot}",
+				"executable": "./build/Firmware.elf",
+				"name": "Debug STM32",
+				"request": "launch",
+				"type": "cortex-debug",
+				"servertype": "openocd",
+				"preLaunchTask": "Build STM",
+				"device": "stlink",
+				"configFiles": [
+					"interface/stlink.cfg",
+					"target/stm32f1x.cfg"
+				]
+			}
+		]
 	}
 }

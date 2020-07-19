@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "showDevDebugOutput": true,
+            "showDevDebugOutput": false,
             "cwd": "${workspaceRoot}",
             "executable": "./build/Firmware.elf",
             "name": "Debug STM32",
@@ -9,11 +9,27 @@
             "type": "cortex-debug",
             "servertype": "openocd",
             "preLaunchTask": "Build STM",
+            "interface": "swd",
             "device": "stlink",
             "configFiles": [
-                "interface/stlink.cfg",
+                "interface/stlink-v2-1.cfg",
                 "target/stm32f1x.cfg"
             ]
         }
+        // {
+        //     "showDevDebugOutput": true,
+        //     "cwd": "${workspaceRoot}",
+        //     "executable": "./build/MODPlayer-32F4DISCO.elf",
+        //     "name": "Debug STM32",
+        //     "request": "launch",
+        //     "type": "cortex-debug",
+        //     "servertype": "openocd",
+        //     "preLaunchTask": "Build STM",
+        //     "device": "stlink",
+        //     "configFiles": [
+        //         "interface/stlink-v2-1.cfg",
+        //         "target/stm32f4x.cfg"
+        //     ]
+        // }
     ]
 }

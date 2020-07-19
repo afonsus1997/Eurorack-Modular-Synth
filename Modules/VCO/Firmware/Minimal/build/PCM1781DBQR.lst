@@ -1,0 +1,167 @@
+ARM GAS  F:\Temp\ccmzrxDb.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"PCM1781DBQR.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.DAC8551_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	DAC8551_Init
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	DAC8551_Init:
+  25              	.LFB65:
+  26              		.file 1 "lib/PCM1781DBQR.c"
+   1:lib/PCM1781DBQR.c **** /**
+   2:lib/PCM1781DBQR.c **** ***************************************************************************************************
+   3:lib/PCM1781DBQR.c **** * @file:	PCM1781DBQR.c
+   4:lib/PCM1781DBQR.c **** * @author:	Afonso Muralha
+   5:lib/PCM1781DBQR.c **** * @date:	2020年07月04日 01:05:52 Saturday
+   6:lib/PCM1781DBQR.c **** * @brief:	
+   7:lib/PCM1781DBQR.c **** ***************************************************************************************************
+   8:lib/PCM1781DBQR.c **** **/
+   9:lib/PCM1781DBQR.c **** 
+  10:lib/PCM1781DBQR.c **** #include "PCM1781DBQR.h"
+  11:lib/PCM1781DBQR.c **** 
+  12:lib/PCM1781DBQR.c **** void DAC8551_Init(){
+  27              		.loc 1 12 20 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 10B5     		push	{r4, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  13:lib/PCM1781DBQR.c ****     HAL_GPIO_WritePin(DEMP0_GPIO_Port, DEMP0_Pin, DEMP0);
+  36              		.loc 1 13 5 view .LVU1
+  37 0002 094C     		ldr	r4, .L3
+  38 0004 0022     		movs	r2, #0
+  39 0006 4FF48071 		mov	r1, #256
+  40 000a 2046     		mov	r0, r4
+  41 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  42              	.LVL0:
+  14:lib/PCM1781DBQR.c ****     HAL_GPIO_WritePin(DEMP1_GPIO_Port, DEMP1_Pin, DEMP1);
+  43              		.loc 1 14 5 view .LVU2
+  44 0010 0022     		movs	r2, #0
+ARM GAS  F:\Temp\ccmzrxDb.s 			page 2
+
+
+  45 0012 8021     		movs	r1, #128
+  46 0014 2046     		mov	r0, r4
+  47 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  48              	.LVL1:
+  15:lib/PCM1781DBQR.c ****     HAL_GPIO_WritePin(DACFORMAT_GPIO_Port, DACFORMAT_Pin, FORMAT);
+  49              		.loc 1 15 5 view .LVU3
+  50 001a 0022     		movs	r2, #0
+  51 001c 4FF40071 		mov	r1, #512
+  52 0020 2046     		mov	r0, r4
+  53 0022 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  54              	.LVL2:
+  16:lib/PCM1781DBQR.c ****     // HAL_GPIO_WritePin() DAT MUTE not routed, but shoud be controlled in the future
+  17:lib/PCM1781DBQR.c **** }
+  55              		.loc 1 17 1 is_stmt 0 view .LVU4
+  56 0026 10BD     		pop	{r4, pc}
+  57              	.L4:
+  58              		.align	2
+  59              	.L3:
+  60 0028 00100140 		.word	1073811456
+  61              		.cfi_endproc
+  62              	.LFE65:
+  64              		.section	.text.DAC8551_WriteSample,"ax",%progbits
+  65              		.align	1
+  66              		.global	DAC8551_WriteSample
+  67              		.syntax unified
+  68              		.thumb
+  69              		.thumb_func
+  70              		.fpu softvfp
+  72              	DAC8551_WriteSample:
+  73              	.LVL3:
+  74              	.LFB66:
+  18:lib/PCM1781DBQR.c **** 
+  19:lib/PCM1781DBQR.c **** void DAC8551_WriteSample(uint16_t ch0, uint16_t ch1){
+  75              		.loc 1 19 53 is_stmt 1 view -0
+  76              		.cfi_startproc
+  77              		@ args = 0, pretend = 0, frame = 8
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		.loc 1 19 53 is_stmt 0 view .LVU6
+  80 0000 00B5     		push	{lr}
+  81              	.LCFI1:
+  82              		.cfi_def_cfa_offset 4
+  83              		.cfi_offset 14, -4
+  84 0002 83B0     		sub	sp, sp, #12
+  85              	.LCFI2:
+  86              		.cfi_def_cfa_offset 16
+  20:lib/PCM1781DBQR.c ****     uint16_t samples[2] = {ch0, ch1};
+  87              		.loc 1 20 5 is_stmt 1 view .LVU7
+  88              		.loc 1 20 14 is_stmt 0 view .LVU8
+  89 0004 ADF80400 		strh	r0, [sp, #4]	@ movhi
+  90 0008 ADF80610 		strh	r1, [sp, #6]	@ movhi
+  21:lib/PCM1781DBQR.c ****     HAL_I2S_Transmit(&hi2s2, (uint16_t*)samples, 2, HAL_MAX_DELAY);
+  91              		.loc 1 21 5 is_stmt 1 view .LVU9
+  92 000c 4FF0FF33 		mov	r3, #-1
+  93 0010 0222     		movs	r2, #2
+  94 0012 01A9     		add	r1, sp, #4
+  95              	.LVL4:
+  96              		.loc 1 21 5 is_stmt 0 view .LVU10
+ARM GAS  F:\Temp\ccmzrxDb.s 			page 3
+
+
+  97 0014 0248     		ldr	r0, .L7
+  98              	.LVL5:
+  99              		.loc 1 21 5 view .LVU11
+ 100 0016 FFF7FEFF 		bl	HAL_I2S_Transmit
+ 101              	.LVL6:
+  22:lib/PCM1781DBQR.c **** }
+ 102              		.loc 1 22 1 view .LVU12
+ 103 001a 03B0     		add	sp, sp, #12
+ 104              	.LCFI3:
+ 105              		.cfi_def_cfa_offset 4
+ 106              		@ sp needed
+ 107 001c 5DF804FB 		ldr	pc, [sp], #4
+ 108              	.L8:
+ 109              		.align	2
+ 110              	.L7:
+ 111 0020 00000000 		.word	hi2s2
+ 112              		.cfi_endproc
+ 113              	.LFE66:
+ 115              		.text
+ 116              	.Letext0:
+ 117              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 118              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 119              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 120              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 121              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 122              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2s.h"
+ 123              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 124              		.file 9 "lib/PCM1781DBQR.h"
+ARM GAS  F:\Temp\ccmzrxDb.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 PCM1781DBQR.c
+  F:\Temp\ccmzrxDb.s:16     .text.DAC8551_Init:00000000 $t
+  F:\Temp\ccmzrxDb.s:24     .text.DAC8551_Init:00000000 DAC8551_Init
+  F:\Temp\ccmzrxDb.s:60     .text.DAC8551_Init:00000028 $d
+  F:\Temp\ccmzrxDb.s:65     .text.DAC8551_WriteSample:00000000 $t
+  F:\Temp\ccmzrxDb.s:72     .text.DAC8551_WriteSample:00000000 DAC8551_WriteSample
+  F:\Temp\ccmzrxDb.s:111    .text.DAC8551_WriteSample:00000020 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_I2S_Transmit
+hi2s2

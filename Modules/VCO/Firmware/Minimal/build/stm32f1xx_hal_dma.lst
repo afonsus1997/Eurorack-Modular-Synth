@@ -1,4 +1,4 @@
-ARM GAS  F:\Temp\cctQZSiB.s 			page 1
+ARM GAS  F:\Temp\cc8usOu4.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
   30:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****                    
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****      -@-   In Memory-to-Memory transfer mode, Circular mode is not allowed.
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****      *** Polling mode IO operation ***
-ARM GAS  F:\Temp\cctQZSiB.s 			page 2
+ARM GAS  F:\Temp\cc8usOu4.s 			page 2
 
 
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****      =================================
@@ -118,7 +118,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
   87:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** /** @addtogroup STM32F1xx_HAL_Driver
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @{
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   */
-ARM GAS  F:\Temp\cctQZSiB.s 			page 3
+ARM GAS  F:\Temp\cc8usOu4.s 			page 3
 
 
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -178,7 +178,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  144:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** {
  145:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   uint32_t tmp = 0U;
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 4
+ARM GAS  F:\Temp\cc8usOu4.s 			page 4
 
 
  147:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   /* Check the DMA handle allocation */
@@ -238,7 +238,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  201:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   hdma->Instance->CCR = tmp;
  202:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  203:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   /* Initialise the error code */
-ARM GAS  F:\Temp\cctQZSiB.s 			page 5
+ARM GAS  F:\Temp\cc8usOu4.s 			page 5
 
 
  204:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   hdma->ErrorCode = HAL_DMA_ERROR_NONE;
@@ -298,7 +298,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  258:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     hdma->DmaBaseAddress = DMA2;
  259:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  260:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** #else
-ARM GAS  F:\Temp\cctQZSiB.s 			page 6
+ARM GAS  F:\Temp\cc8usOu4.s 			page 6
 
 
  261:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   /* DMA1 */
@@ -358,7 +358,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  315:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  DstAddress: The destination memory Buffer address
  316:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  DataLength: The length of data to be transferred from source to destination
  317:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @retval HAL status
-ARM GAS  F:\Temp\cctQZSiB.s 			page 7
+ARM GAS  F:\Temp\cc8usOu4.s 			page 7
 
 
  318:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   */
@@ -418,7 +418,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  372:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   if(HAL_DMA_STATE_READY == hdma->State)
  373:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   {
  374:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     /* Change DMA peripheral state */
-ARM GAS  F:\Temp\cctQZSiB.s 			page 8
+ARM GAS  F:\Temp\cc8usOu4.s 			page 8
 
 
  375:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     hdma->State = HAL_DMA_STATE_BUSY;
@@ -478,7 +478,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  429:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  430:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   else
  431:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 9
+ARM GAS  F:\Temp\cc8usOu4.s 			page 9
 
 
  432:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   {
@@ -538,7 +538,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  486:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     if(hdma->XferAbortCallback != NULL)
  487:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
  488:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->XferAbortCallback(hdma);
-ARM GAS  F:\Temp\cctQZSiB.s 			page 10
+ARM GAS  F:\Temp\cc8usOu4.s 			page 10
 
 
  489:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     } 
@@ -598,7 +598,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  543:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       /* Clear all flags */
  544:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->DmaBaseAddress->IFCR = (DMA_ISR_GIF1 << hdma->ChannelIndex);
  545:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 11
+ARM GAS  F:\Temp\cc8usOu4.s 			page 11
 
 
  546:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       /* Update error code */
@@ -658,7 +658,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  600:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   *               the configuration information for the specified DMA Channel.  
  601:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @retval None
  602:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   */
-ARM GAS  F:\Temp\cctQZSiB.s 			page 12
+ARM GAS  F:\Temp\cc8usOu4.s 			page 12
 
 
  603:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** void HAL_DMA_IRQHandler(DMA_HandleTypeDef *hdma)
@@ -718,7 +718,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  657:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     /* When a DMA transfer error occurs */
  658:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     /* A hardware clear of its EN bits is performed */
  659:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     /* Disable ALL DMA IT */
-ARM GAS  F:\Temp\cctQZSiB.s 			page 13
+ARM GAS  F:\Temp\cc8usOu4.s 			page 13
 
 
  660:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     __HAL_DMA_DISABLE_IT(hdma, (DMA_IT_TC | DMA_IT_HT | DMA_IT_TE));
@@ -778,7 +778,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  714:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       break;         
  715:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       
  716:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     case  HAL_DMA_XFER_ABORT_CB_ID:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 14
+ARM GAS  F:\Temp\cc8usOu4.s 			page 14
 
 
  717:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->XferAbortCallback = pCallback;
@@ -838,7 +838,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  771:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     case   HAL_DMA_XFER_ALL_CB_ID:
  772:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->XferCpltCallback = NULL;
  773:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->XferHalfCpltCallback = NULL;
-ARM GAS  F:\Temp\cctQZSiB.s 			page 15
+ARM GAS  F:\Temp\cc8usOu4.s 			page 15
 
 
  774:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       hdma->XferErrorCallback = NULL;
@@ -898,7 +898,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  828:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @param  hdma : pointer to a DMA_HandleTypeDef structure that contains
  829:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   *              the configuration information for the specified DMA Channel.
  830:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   * @retval DMA Error Code
-ARM GAS  F:\Temp\cctQZSiB.s 			page 16
+ARM GAS  F:\Temp\cc8usOu4.s 			page 16
 
 
  831:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   */
@@ -958,7 +958,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
   47              		.loc 1 864 7 is_stmt 0 view .LVU6
   48 000c 0468     		ldr	r4, [r0]
   49              		.loc 1 864 25 view .LVU7
-ARM GAS  F:\Temp\cctQZSiB.s 			page 17
+ARM GAS  F:\Temp\cc8usOu4.s 			page 17
 
 
   50 000e 6360     		str	r3, [r4, #4]
@@ -1018,7 +1018,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  870:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
   83              		.loc 1 870 9 is_stmt 0 view .LVU19
   84 0022 0368     		ldr	r3, [r0]
-ARM GAS  F:\Temp\cctQZSiB.s 			page 18
+ARM GAS  F:\Temp\cc8usOu4.s 			page 18
 
 
  870:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  158:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   assert_param(IS_DMA_MEMORY_DATA_SIZE(hdma->Init.MemDataAlignment));
  128              		.loc 1 158 3 view .LVU33
  159:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   assert_param(IS_DMA_MODE(hdma->Init.Mode));
-ARM GAS  F:\Temp\cctQZSiB.s 			page 19
+ARM GAS  F:\Temp\cc8usOu4.s 			page 19
 
 
  129              		.loc 1 159 3 view .LVU34
@@ -1138,7 +1138,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  190:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****                       DMA_CCR_MINC  | DMA_CCR_PINC   | DMA_CCR_CIRC   | \
  166              		.loc 1 190 7 is_stmt 0 view .LVU52
  167 002c 21F47F51 		bic	r1, r1, #16320
-ARM GAS  F:\Temp\cctQZSiB.s 			page 20
+ARM GAS  F:\Temp\cc8usOu4.s 			page 20
 
 
  168              	.LVL8:
@@ -1198,7 +1198,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  206              	.LVL11:
  207:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   /* Allocate lock resource and initialize it */
  207              		.loc 1 207 15 view .LVU69
-ARM GAS  F:\Temp\cctQZSiB.s 			page 21
+ARM GAS  F:\Temp\cc8usOu4.s 			page 21
 
 
  208 0058 82F82130 		strb	r3, [r2, #33]
@@ -1258,7 +1258,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  249              		.loc 1 212 1 view .LVU82
  250 007c 7047     		bx	lr
  251              	.L16:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 22
+ARM GAS  F:\Temp\cc8usOu4.s 			page 22
 
 
  252 007e 00BF     		.align	2
@@ -1318,7 +1318,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  298 0016 0168     		ldr	r1, [r0]
  238:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  299              		.loc 1 238 25 view .LVU93
-ARM GAS  F:\Temp\cctQZSiB.s 			page 23
+ARM GAS  F:\Temp\cc8usOu4.s 			page 23
 
 
  300 0018 4A60     		str	r2, [r1, #4]
@@ -1378,7 +1378,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  336              		.loc 1 267 54 is_stmt 0 view .LVU111
  337 003e 186C     		ldr	r0, [r3, #64]
  338              	.LVL16:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 24
+ARM GAS  F:\Temp\cc8usOu4.s 			page 24
 
 
  267:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  373              	.L19:
  257:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     hdma->DmaBaseAddress = DMA2;
  374              		.loc 1 257 5 is_stmt 1 view .LVU132
-ARM GAS  F:\Temp\cctQZSiB.s 			page 25
+ARM GAS  F:\Temp\cc8usOu4.s 			page 25
 
 
  257:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     hdma->DmaBaseAddress = DMA2;
@@ -1498,7 +1498,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  422              		@ args = 0, pretend = 0, frame = 0
  423              		@ frame_needed = 0, uses_anonymous_args = 0
  320:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   HAL_StatusTypeDef status = HAL_OK;
-ARM GAS  F:\Temp\cctQZSiB.s 			page 26
+ARM GAS  F:\Temp\cc8usOu4.s 			page 26
 
 
  424              		.loc 1 320 1 is_stmt 0 view .LVU142
@@ -1558,7 +1558,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  462              		.loc 1 348 11 is_stmt 0 view .LVU158
  463 0020 0220     		movs	r0, #2
  464              	.LVL24:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 27
+ARM GAS  F:\Temp\cc8usOu4.s 			page 27
 
 
  465              	.L25:
@@ -1618,7 +1618,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  511              	HAL_DMA_Start_IT:
  512              	.LVL28:
  513              	.LFB68:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 28
+ARM GAS  F:\Temp\cc8usOu4.s 			page 28
 
 
  363:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   HAL_StatusTypeDef status = HAL_OK;
@@ -1678,7 +1678,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  402:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  553              		.loc 1 402 5 is_stmt 1 view .LVU184
  405:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }    
-ARM GAS  F:\Temp\cctQZSiB.s 			page 29
+ARM GAS  F:\Temp\cc8usOu4.s 			page 29
 
 
  554              		.loc 1 405 5 view .LVU185
@@ -1738,7 +1738,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  595 0050 43F00103 		orr	r3, r3, #1
  596 0054 1360     		str	r3, [r2]
  364:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 30
+ARM GAS  F:\Temp\cc8usOu4.s 			page 30
 
 
  597              		.loc 1 364 21 is_stmt 0 view .LVU199
@@ -1798,7 +1798,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  423:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     
  644              		.loc 1 423 21 is_stmt 0 view .LVU209
  645 0008 0423     		movs	r3, #4
-ARM GAS  F:\Temp\cctQZSiB.s 			page 31
+ARM GAS  F:\Temp\cc8usOu4.s 			page 31
 
 
  646 000a 8363     		str	r3, [r0, #56]
@@ -1858,7 +1858,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  446:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   
  684              		.loc 1 446 3 view .LVU226
  685 003a 0023     		movs	r3, #0
-ARM GAS  F:\Temp\cctQZSiB.s 			page 32
+ARM GAS  F:\Temp\cc8usOu4.s 			page 32
 
 
  686 003c 80F82030 		strb	r3, [r0, #32]
@@ -1918,7 +1918,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  466:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  730              		.loc 1 466 5 is_stmt 1 view .LVU239
  731              	.LVL43:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 33
+ARM GAS  F:\Temp\cc8usOu4.s 			page 33
 
 
  466:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
@@ -1978,7 +1978,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  775 004a 2FD0     		beq	.L52
  477:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  776              		.loc 1 477 5 discriminator 11 view .LVU251
-ARM GAS  F:\Temp\cctQZSiB.s 			page 34
+ARM GAS  F:\Temp\cc8usOu4.s 			page 34
 
 
  777 004c 1432     		adds	r2, r2, #20
@@ -2038,7 +2038,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  820 008c 80F82030 		strb	r3, [r0, #32]
  483:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  821              		.loc 1 483 5 view .LVU263
-ARM GAS  F:\Temp\cctQZSiB.s 			page 35
+ARM GAS  F:\Temp\cc8usOu4.s 			page 35
 
 
  486:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
@@ -2098,7 +2098,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  868              		.loc 1 477 5 discriminator 47 view .LVU271
  869 00d2 1432     		adds	r2, r2, #20
  870 00d4 9342     		cmp	r3, r2
-ARM GAS  F:\Temp\cctQZSiB.s 			page 36
+ARM GAS  F:\Temp\cc8usOu4.s 			page 36
 
 
  871 00d6 25D0     		beq	.L60
@@ -2158,7 +2158,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  915 011c 0122     		movs	r2, #1
  916              	.L47:
  477:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 37
+ARM GAS  F:\Temp\cc8usOu4.s 			page 37
 
 
  917              		.loc 1 477 5 discriminator 90 view .LVU282
@@ -2218,7 +2218,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  969              		.thumb
  970              		.thumb_func
  971              		.fpu softvfp
-ARM GAS  F:\Temp\cctQZSiB.s 			page 38
+ARM GAS  F:\Temp\cc8usOu4.s 			page 38
 
 
  973              	HAL_DMA_PollForTransfer:
@@ -2278,7 +2278,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1013 0018 0120     		movs	r0, #1
  1014              	.LVL51:
  1015              	.L78:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 39
+ARM GAS  F:\Temp\cc8usOu4.s 			page 39
 
 
  595:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -2338,7 +2338,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  526:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  1056              		.loc 1 526 12 discriminator 9 view .LVU314
  1057 004c 1432     		adds	r2, r2, #20
-ARM GAS  F:\Temp\cctQZSiB.s 			page 40
+ARM GAS  F:\Temp\cc8usOu4.s 			page 40
 
 
  1058 004e 9342     		cmp	r3, r2
@@ -2398,7 +2398,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  531:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  1100              		.loc 1 531 5 is_stmt 1 view .LVU327
  531:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
-ARM GAS  F:\Temp\cctQZSiB.s 			page 41
+ARM GAS  F:\Temp\cc8usOu4.s 			page 41
 
 
  1101              		.loc 1 531 12 is_stmt 0 view .LVU328
@@ -2458,7 +2458,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  531:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  1145              		.loc 1 531 12 view .LVU339
  1146 00cc 4FF48027 		mov	r7, #262144
-ARM GAS  F:\Temp\cctQZSiB.s 			page 42
+ARM GAS  F:\Temp\cc8usOu4.s 			page 42
 
 
  1147 00d0 03E0     		b	.L81
@@ -2518,7 +2518,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1194 0110 E3E7     		b	.L81
  1195              	.L113:
  531:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
-ARM GAS  F:\Temp\cctQZSiB.s 			page 43
+ARM GAS  F:\Temp\cc8usOu4.s 			page 43
 
 
  1196              		.loc 1 531 12 view .LVU347
@@ -2578,7 +2578,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1245 015c B6F1FF3F 		cmp	r6, #-1
  1246 0160 40F0B080 		bne	.L195
  1247              	.L88:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 44
+ARM GAS  F:\Temp\cc8usOu4.s 			page 44
 
 
  537:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   {
@@ -2638,7 +2638,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  539:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
  1290              		.loc 1 539 9 discriminator 9 view .LVU365
  1291 01a4 1431     		adds	r1, r1, #20
-ARM GAS  F:\Temp\cctQZSiB.s 			page 45
+ARM GAS  F:\Temp\cc8usOu4.s 			page 45
 
 
  1292 01a6 8B42     		cmp	r3, r1
@@ -2698,7 +2698,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1339              	.L131:
  1340 01f8 0823     		movs	r3, #8
  1341 01fa A8E7     		b	.L84
-ARM GAS  F:\Temp\cctQZSiB.s 			page 46
+ARM GAS  F:\Temp\cc8usOu4.s 			page 46
 
 
  1342              	.L132:
@@ -2758,7 +2758,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  539:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
  1387              		.loc 1 539 9 discriminator 64 view .LVU382
  1388 0242 1431     		adds	r1, r1, #20
-ARM GAS  F:\Temp\cctQZSiB.s 			page 47
+ARM GAS  F:\Temp\cc8usOu4.s 			page 47
 
 
  1389 0244 8B42     		cmp	r3, r1
@@ -2818,7 +2818,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  544:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  1439              		.loc 1 544 7 is_stmt 1 view .LVU387
  544:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 48
+ARM GAS  F:\Temp\cc8usOu4.s 			page 48
 
 
  1440              		.loc 1 544 57 is_stmt 0 view .LVU388
@@ -2878,7 +2878,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1479 02ca A0EB0900 		sub	r0, r0, r9
  560:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       {
  1480              		.loc 1 560 26 discriminator 1 view .LVU404
-ARM GAS  F:\Temp\cctQZSiB.s 			page 49
+ARM GAS  F:\Temp\cc8usOu4.s 			page 49
 
 
  1481 02ce B042     		cmp	r0, r6
@@ -2938,7 +2938,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1521 0308 9342     		cmp	r3, r2
  1522 030a 24D0     		beq	.L146
  579:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 50
+ARM GAS  F:\Temp\cc8usOu4.s 			page 50
 
 
  1523              		.loc 1 579 5 discriminator 3 view .LVU419
@@ -2998,7 +2998,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1567 0350 4FF40053 		mov	r3, #8192
  1568 0354 00E0     		b	.L95
  1569              	.L146:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 51
+ARM GAS  F:\Temp\cc8usOu4.s 			page 51
 
 
  1570 0356 0223     		movs	r3, #2
@@ -3058,7 +3058,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1615 0394 4FF40073 		mov	r3, #512
  1616 0398 DEE7     		b	.L95
  1617              	.L94:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 52
+ARM GAS  F:\Temp\cc8usOu4.s 			page 52
 
 
  579:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1661 03dc 02D0     		beq	.L200
  579:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  1662              		.loc 1 579 5 view .LVU450
-ARM GAS  F:\Temp\cctQZSiB.s 			page 53
+ARM GAS  F:\Temp\cc8usOu4.s 			page 53
 
 
  1663 03de 4FF40033 		mov	r3, #131072
@@ -3178,7 +3178,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1712              		.loc 1 588 5 discriminator 3 view .LVU455
  1713 042e 1432     		adds	r2, r2, #20
  1714 0430 9342     		cmp	r3, r2
-ARM GAS  F:\Temp\cctQZSiB.s 			page 54
+ARM GAS  F:\Temp\cc8usOu4.s 			page 54
 
 
  1715 0432 25D0     		beq	.L169
@@ -3238,7 +3238,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1759 0478 0423     		movs	r3, #4
  1760              	.L100:
  588:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
-ARM GAS  F:\Temp\cctQZSiB.s 			page 55
+ARM GAS  F:\Temp\cc8usOu4.s 			page 55
 
 
  1761              		.loc 1 588 5 discriminator 46 view .LVU466
@@ -3298,7 +3298,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  588:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   }
  1810              		.loc 1 588 5 discriminator 53 view .LVU472
  1811 04c8 1432     		adds	r2, r2, #20
-ARM GAS  F:\Temp\cctQZSiB.s 			page 56
+ARM GAS  F:\Temp\cc8usOu4.s 			page 56
 
 
  1812 04ca 9342     		cmp	r3, r2
@@ -3358,7 +3358,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1857 0510 F7E7     		b	.L101
  1858              	.L182:
  1859 0512 4FF48043 		mov	r3, #16384
-ARM GAS  F:\Temp\cctQZSiB.s 			page 57
+ARM GAS  F:\Temp\cc8usOu4.s 			page 57
 
 
  1860 0516 F4E7     		b	.L101
@@ -3418,7 +3418,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  605:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   uint32_t source_it = hdma->Instance->CCR;
  1913              		.loc 1 605 26 is_stmt 0 view .LVU485
  1914 0002 C36B     		ldr	r3, [r0, #60]
-ARM GAS  F:\Temp\cctQZSiB.s 			page 58
+ARM GAS  F:\Temp\cc8usOu4.s 			page 58
 
 
  605:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   uint32_t source_it = hdma->Instance->CCR;
@@ -3478,7 +3478,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  618:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  1954              		.loc 1 618 5 discriminator 1 view .LVU501
  1955 0036 783A     		subs	r2, r2, #120
-ARM GAS  F:\Temp\cctQZSiB.s 			page 59
+ARM GAS  F:\Temp\cc8usOu4.s 			page 59
 
 
  1956 0038 9342     		cmp	r3, r2
@@ -3538,7 +3538,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  1999 007a 4FF48022 		mov	r2, #262144
  2000 007e 03E0     		b	.L211
  2001              	.L266:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 60
+ARM GAS  F:\Temp\cc8usOu4.s 			page 60
 
 
  2002 0080 4FF48042 		mov	r2, #16384
@@ -3598,7 +3598,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2049 00be 4FF48062 		mov	r2, #1024
  2050 00c2 E1E7     		b	.L211
  2051              	.L210:
-ARM GAS  F:\Temp\cctQZSiB.s 			page 61
+ARM GAS  F:\Temp\cc8usOu4.s 			page 61
 
 
  618:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -3658,7 +3658,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2095 0106 02D0     		beq	.L267
  618:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  2096              		.loc 1 618 5 view .LVU531
-ARM GAS  F:\Temp\cctQZSiB.s 			page 62
+ARM GAS  F:\Temp\cc8usOu4.s 			page 62
 
 
  2097 0108 4FF48022 		mov	r2, #262144
@@ -3718,7 +3718,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  631:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   {
  2146              		.loc 1 631 72 discriminator 1 view .LVU537
  2147 0156 15F0020F 		tst	r5, #2
-ARM GAS  F:\Temp\cctQZSiB.s 			page 63
+ARM GAS  F:\Temp\cc8usOu4.s 			page 63
 
 
  2148 015a 00F0A780 		beq	.L215
@@ -3778,7 +3778,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2189 0196 9342     		cmp	r3, r2
  2190 0198 2CD0     		beq	.L247
  642:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 64
+ARM GAS  F:\Temp\cc8usOu4.s 			page 64
 
 
  2191              		.loc 1 642 7 discriminator 11 view .LVU551
@@ -3838,7 +3838,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  647:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
  2234              		.loc 1 647 12 is_stmt 0 view .LVU563
  2235 01d8 836A     		ldr	r3, [r0, #40]
-ARM GAS  F:\Temp\cctQZSiB.s 			page 65
+ARM GAS  F:\Temp\cc8usOu4.s 			page 65
 
 
  647:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****     {
@@ -3898,7 +3898,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2283 0220 1432     		adds	r2, r2, #20
  2284 0222 9342     		cmp	r3, r2
  2285 0224 24D0     		beq	.L256
-ARM GAS  F:\Temp\cctQZSiB.s 			page 66
+ARM GAS  F:\Temp\cc8usOu4.s 			page 66
 
 
  642:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -3958,7 +3958,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2330 026a B2E7     		b	.L219
  2331              	.L255:
  642:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
-ARM GAS  F:\Temp\cctQZSiB.s 			page 67
+ARM GAS  F:\Temp\cc8usOu4.s 			page 67
 
 
  2332              		.loc 1 642 7 view .LVU581
@@ -4018,7 +4018,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2381 02c6 2360     		str	r3, [r4]
  663:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  2382              		.loc 1 663 5 view .LVU587
-ARM GAS  F:\Temp\cctQZSiB.s 			page 68
+ARM GAS  F:\Temp\cc8usOu4.s 			page 68
 
 
  663:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -4078,7 +4078,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2422              		.thumb
  2423              		.thumb_func
  2424              		.fpu softvfp
-ARM GAS  F:\Temp\cctQZSiB.s 			page 69
+ARM GAS  F:\Temp\cc8usOu4.s 			page 69
 
 
  2426              	HAL_DMA_RegisterCallback:
@@ -4138,7 +4138,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  731:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   
  2465              		.loc 1 731 3 is_stmt 1 view .LVU619
  733:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** }
-ARM GAS  F:\Temp\cctQZSiB.s 			page 70
+ARM GAS  F:\Temp\cc8usOu4.s 			page 70
 
 
  2466              		.loc 1 733 3 view .LVU620
@@ -4198,7 +4198,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2504              		.loc 1 695 21 is_stmt 0 view .LVU636
  2505 003c 0020     		movs	r0, #0
  714:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****       
-ARM GAS  F:\Temp\cctQZSiB.s 			page 71
+ARM GAS  F:\Temp\cc8usOu4.s 			page 71
 
 
  2506              		.loc 1 714 7 view .LVU637
@@ -4258,7 +4258,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  749:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c ****   
  2550              		.loc 1 749 3 discriminator 2 view .LVU650
  2551 000a 0122     		movs	r2, #1
-ARM GAS  F:\Temp\cctQZSiB.s 			page 72
+ARM GAS  F:\Temp\cc8usOu4.s 			page 72
 
 
  2552 000c 80F82020 		strb	r2, [r0, #32]
@@ -4318,7 +4318,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  746:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  2592              		.loc 1 746 21 is_stmt 0 view .LVU665
  2593 0034 0846     		mov	r0, r1
-ARM GAS  F:\Temp\cctQZSiB.s 			page 73
+ARM GAS  F:\Temp\cc8usOu4.s 			page 73
 
 
  757:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
@@ -4378,7 +4378,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2630 0052 5863     		str	r0, [r3, #52]
  776:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** 
  2631              		.loc 1 776 7 is_stmt 1 view .LVU684
-ARM GAS  F:\Temp\cctQZSiB.s 			page 74
+ARM GAS  F:\Temp\cc8usOu4.s 			page 74
 
 
  2632 0054 E1E7     		b	.L285
@@ -4438,7 +4438,7 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2683              		@ link register save eliminated.
  834:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** }
  2684              		.loc 1 834 3 view .LVU692
-ARM GAS  F:\Temp\cctQZSiB.s 			page 75
+ARM GAS  F:\Temp\cc8usOu4.s 			page 75
 
 
  834:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c **** }
@@ -4459,50 +4459,50 @@ ARM GAS  F:\Temp\cctQZSiB.s 			page 1
  2699              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
  2700              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
  2701              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  F:\Temp\cctQZSiB.s 			page 76
+ARM GAS  F:\Temp\cc8usOu4.s 			page 76
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_dma.c
-  F:\Temp\cctQZSiB.s:16     .text.DMA_SetConfig:00000000 $t
-  F:\Temp\cctQZSiB.s:23     .text.DMA_SetConfig:00000000 DMA_SetConfig
-  F:\Temp\cctQZSiB.s:98     .text.HAL_DMA_Init:00000000 $t
-  F:\Temp\cctQZSiB.s:105    .text.HAL_DMA_Init:00000000 HAL_DMA_Init
-  F:\Temp\cctQZSiB.s:254    .text.HAL_DMA_Init:00000080 $d
-  F:\Temp\cctQZSiB.s:264    .text.HAL_DMA_DeInit:00000000 $t
-  F:\Temp\cctQZSiB.s:271    .text.HAL_DMA_DeInit:00000000 HAL_DMA_DeInit
-  F:\Temp\cctQZSiB.s:400    .text.HAL_DMA_DeInit:00000078 $d
-  F:\Temp\cctQZSiB.s:410    .text.HAL_DMA_Start:00000000 $t
-  F:\Temp\cctQZSiB.s:417    .text.HAL_DMA_Start:00000000 HAL_DMA_Start
-  F:\Temp\cctQZSiB.s:504    .text.HAL_DMA_Start_IT:00000000 $t
-  F:\Temp\cctQZSiB.s:511    .text.HAL_DMA_Start_IT:00000000 HAL_DMA_Start_IT
-  F:\Temp\cctQZSiB.s:621    .text.HAL_DMA_Abort:00000000 $t
-  F:\Temp\cctQZSiB.s:628    .text.HAL_DMA_Abort:00000000 HAL_DMA_Abort
-  F:\Temp\cctQZSiB.s:698    .text.HAL_DMA_Abort_IT:00000000 $t
-  F:\Temp\cctQZSiB.s:705    .text.HAL_DMA_Abort_IT:00000000 HAL_DMA_Abort_IT
-  F:\Temp\cctQZSiB.s:958    .text.HAL_DMA_Abort_IT:00000158 $d
-  F:\Temp\cctQZSiB.s:966    .text.HAL_DMA_PollForTransfer:00000000 $t
-  F:\Temp\cctQZSiB.s:973    .text.HAL_DMA_PollForTransfer:00000000 HAL_DMA_PollForTransfer
-  F:\Temp\cctQZSiB.s:1467   .text.HAL_DMA_PollForTransfer:000002b4 $d
-  F:\Temp\cctQZSiB.s:1474   .text.HAL_DMA_PollForTransfer:000002c4 $t
-  F:\Temp\cctQZSiB.s:1882   .text.HAL_DMA_PollForTransfer:00000538 $d
-  F:\Temp\cctQZSiB.s:1890   .text.HAL_DMA_IRQHandler:00000000 $t
-  F:\Temp\cctQZSiB.s:1897   .text.HAL_DMA_IRQHandler:00000000 HAL_DMA_IRQHandler
-  F:\Temp\cctQZSiB.s:2362   .text.HAL_DMA_IRQHandler:0000029c $d
-  F:\Temp\cctQZSiB.s:2370   .text.HAL_DMA_IRQHandler:000002ac $t
-  F:\Temp\cctQZSiB.s:2419   .text.HAL_DMA_RegisterCallback:00000000 $t
-  F:\Temp\cctQZSiB.s:2426   .text.HAL_DMA_RegisterCallback:00000000 HAL_DMA_RegisterCallback
-  F:\Temp\cctQZSiB.s:2476   .text.HAL_DMA_RegisterCallback:0000002a $d
-  F:\Temp\cctQZSiB.s:2480   .text.HAL_DMA_RegisterCallback:0000002e $t
-  F:\Temp\cctQZSiB.s:2526   .text.HAL_DMA_UnRegisterCallback:00000000 $t
-  F:\Temp\cctQZSiB.s:2533   .text.HAL_DMA_UnRegisterCallback:00000000 HAL_DMA_UnRegisterCallback
-  F:\Temp\cctQZSiB.s:2580   .text.HAL_DMA_UnRegisterCallback:0000002a $d
-  F:\Temp\cctQZSiB.s:2644   .text.HAL_DMA_GetState:00000000 $t
-  F:\Temp\cctQZSiB.s:2651   .text.HAL_DMA_GetState:00000000 HAL_DMA_GetState
-  F:\Temp\cctQZSiB.s:2669   .text.HAL_DMA_GetError:00000000 $t
-  F:\Temp\cctQZSiB.s:2676   .text.HAL_DMA_GetError:00000000 HAL_DMA_GetError
-  F:\Temp\cctQZSiB.s:2585   .text.HAL_DMA_UnRegisterCallback:0000002f $d
-  F:\Temp\cctQZSiB.s:2585   .text.HAL_DMA_UnRegisterCallback:00000030 $t
+  F:\Temp\cc8usOu4.s:16     .text.DMA_SetConfig:00000000 $t
+  F:\Temp\cc8usOu4.s:23     .text.DMA_SetConfig:00000000 DMA_SetConfig
+  F:\Temp\cc8usOu4.s:98     .text.HAL_DMA_Init:00000000 $t
+  F:\Temp\cc8usOu4.s:105    .text.HAL_DMA_Init:00000000 HAL_DMA_Init
+  F:\Temp\cc8usOu4.s:254    .text.HAL_DMA_Init:00000080 $d
+  F:\Temp\cc8usOu4.s:264    .text.HAL_DMA_DeInit:00000000 $t
+  F:\Temp\cc8usOu4.s:271    .text.HAL_DMA_DeInit:00000000 HAL_DMA_DeInit
+  F:\Temp\cc8usOu4.s:400    .text.HAL_DMA_DeInit:00000078 $d
+  F:\Temp\cc8usOu4.s:410    .text.HAL_DMA_Start:00000000 $t
+  F:\Temp\cc8usOu4.s:417    .text.HAL_DMA_Start:00000000 HAL_DMA_Start
+  F:\Temp\cc8usOu4.s:504    .text.HAL_DMA_Start_IT:00000000 $t
+  F:\Temp\cc8usOu4.s:511    .text.HAL_DMA_Start_IT:00000000 HAL_DMA_Start_IT
+  F:\Temp\cc8usOu4.s:621    .text.HAL_DMA_Abort:00000000 $t
+  F:\Temp\cc8usOu4.s:628    .text.HAL_DMA_Abort:00000000 HAL_DMA_Abort
+  F:\Temp\cc8usOu4.s:698    .text.HAL_DMA_Abort_IT:00000000 $t
+  F:\Temp\cc8usOu4.s:705    .text.HAL_DMA_Abort_IT:00000000 HAL_DMA_Abort_IT
+  F:\Temp\cc8usOu4.s:958    .text.HAL_DMA_Abort_IT:00000158 $d
+  F:\Temp\cc8usOu4.s:966    .text.HAL_DMA_PollForTransfer:00000000 $t
+  F:\Temp\cc8usOu4.s:973    .text.HAL_DMA_PollForTransfer:00000000 HAL_DMA_PollForTransfer
+  F:\Temp\cc8usOu4.s:1467   .text.HAL_DMA_PollForTransfer:000002b4 $d
+  F:\Temp\cc8usOu4.s:1474   .text.HAL_DMA_PollForTransfer:000002c4 $t
+  F:\Temp\cc8usOu4.s:1882   .text.HAL_DMA_PollForTransfer:00000538 $d
+  F:\Temp\cc8usOu4.s:1890   .text.HAL_DMA_IRQHandler:00000000 $t
+  F:\Temp\cc8usOu4.s:1897   .text.HAL_DMA_IRQHandler:00000000 HAL_DMA_IRQHandler
+  F:\Temp\cc8usOu4.s:2362   .text.HAL_DMA_IRQHandler:0000029c $d
+  F:\Temp\cc8usOu4.s:2370   .text.HAL_DMA_IRQHandler:000002ac $t
+  F:\Temp\cc8usOu4.s:2419   .text.HAL_DMA_RegisterCallback:00000000 $t
+  F:\Temp\cc8usOu4.s:2426   .text.HAL_DMA_RegisterCallback:00000000 HAL_DMA_RegisterCallback
+  F:\Temp\cc8usOu4.s:2476   .text.HAL_DMA_RegisterCallback:0000002a $d
+  F:\Temp\cc8usOu4.s:2480   .text.HAL_DMA_RegisterCallback:0000002e $t
+  F:\Temp\cc8usOu4.s:2526   .text.HAL_DMA_UnRegisterCallback:00000000 $t
+  F:\Temp\cc8usOu4.s:2533   .text.HAL_DMA_UnRegisterCallback:00000000 HAL_DMA_UnRegisterCallback
+  F:\Temp\cc8usOu4.s:2580   .text.HAL_DMA_UnRegisterCallback:0000002a $d
+  F:\Temp\cc8usOu4.s:2644   .text.HAL_DMA_GetState:00000000 $t
+  F:\Temp\cc8usOu4.s:2651   .text.HAL_DMA_GetState:00000000 HAL_DMA_GetState
+  F:\Temp\cc8usOu4.s:2669   .text.HAL_DMA_GetError:00000000 $t
+  F:\Temp\cc8usOu4.s:2676   .text.HAL_DMA_GetError:00000000 HAL_DMA_GetError
+  F:\Temp\cc8usOu4.s:2585   .text.HAL_DMA_UnRegisterCallback:0000002f $d
+  F:\Temp\cc8usOu4.s:2585   .text.HAL_DMA_UnRegisterCallback:00000030 $t
 
 UNDEFINED SYMBOLS
 HAL_GetTick

@@ -67,39 +67,39 @@ Source stepping succeeded in finding the operating point.
 
 N-Period=100
 Fourier components of V(n002)
-DC component:-0.0020226
+DC component:-0.00211937
 
 Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
  Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
-    1   	5.000e+03	2.491e+00	1.000e+00	  158.93°	    0.00°
-    2   	1.000e+04	1.318e-02	5.290e-03	 -100.46°	 -259.40°
-    3   	1.500e+04	1.383e-02	5.553e-03	 -114.13°	 -273.07°
-    4   	2.000e+04	1.306e-02	5.241e-03	 -128.70°	 -287.64°
-    5   	2.500e+04	1.149e-02	4.611e-03	 -140.31°	 -299.24°
-    6   	3.000e+04	9.896e-03	3.973e-03	 -148.50°	 -307.43°
-    7   	3.500e+04	8.561e-03	3.437e-03	 -154.19°	 -313.12°
-    8   	4.000e+04	7.494e-03	3.009e-03	 -158.23°	 -317.16°
-    9   	4.500e+04	6.644e-03	2.667e-03	 -161.21°	 -320.14°
-   10   	5.000e+04	5.959e-03	2.393e-03	 -163.47°	 -322.40°
-Total Harmonic Distortion: 1.253172%(3.433772%)
+    1   	5.000e+03	2.487e+00	1.000e+00	  158.97°	    0.00°
+    2   	1.000e+04	1.315e-02	5.289e-03	 -101.41°	 -260.38°
+    3   	1.500e+04	1.369e-02	5.505e-03	 -114.75°	 -273.72°
+    4   	2.000e+04	1.291e-02	5.189e-03	 -128.91°	 -287.88°
+    5   	2.500e+04	1.138e-02	4.575e-03	 -140.29°	 -299.27°
+    6   	3.000e+04	9.827e-03	3.951e-03	 -148.41°	 -307.38°
+    7   	3.500e+04	8.514e-03	3.423e-03	 -154.09°	 -313.06°
+    8   	4.000e+04	7.459e-03	2.999e-03	 -158.14°	 -317.11°
+    9   	4.500e+04	6.617e-03	2.660e-03	 -161.12°	 -320.10°
+   10   	5.000e+04	5.937e-03	2.387e-03	 -163.40°	 -322.37°
+Total Harmonic Distortion: 1.245989%(3.424981%)
 
 
 
-Date: Wed Jun 10 17:24:01 2020
-Total elapsed time: 8.621 seconds.
+Date: Sun Jul 19 16:25:48 2020
+Total elapsed time: 8.321 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 211601
-traniter = 202850
-tranpoints = 100495
-accept = 100363
-rejected = 132
+totiter = 211775
+traniter = 203024
+tranpoints = 100535
+accept = 100392
+rejected = 143
 matrix size = 155
 fillins = 241
 solver = Normal
-Thread vector: 17.6/6.9[4] 3.3/2.1[4] 0.7/2.1[1] 0.8/7.3[1]  2592/500
-Matrix Compiler1: 15.45 KB object code size  4.7/2.0/[1.1]
-Matrix Compiler2: 15.01 KB object code size  2.6/4.1/[1.3]
+Thread vector: 9.9/31.8[1] 3.3/2.1[3] 30.3/6.9[4] 0.6/12.2[1]  2592/500
+Matrix Compiler1: 15.45 KB object code size  4.0/1.5/[0.9]
+Matrix Compiler2: 15.01 KB object code size  2.9/3.4/[0.8]
 

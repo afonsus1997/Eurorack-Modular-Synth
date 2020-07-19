@@ -1,4 +1,4 @@
-ARM GAS  F:\Temp\cc0RkO35.s 			page 1
+ARM GAS  F:\Temp\ccLFor8H.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -55,122 +55,218 @@ ARM GAS  F:\Temp\cc0RkO35.s 			page 1
   47 0010 00100140 		.word	1073811456
   48              		.cfi_endproc
   49              	.LFE65:
-  51              		.section	.text.readADC,"ax",%progbits
+  51              		.section	.text.adcRead,"ax",%progbits
   52              		.align	1
-  53              		.global	readADC
-ARM GAS  F:\Temp\cc0RkO35.s 			page 2
+  53              		.global	adcRead
+ARM GAS  F:\Temp\ccLFor8H.s 			page 2
 
 
   54              		.syntax unified
   55              		.thumb
   56              		.thumb_func
   57              		.fpu softvfp
-  59              	readADC:
+  59              	adcRead:
   60              	.LVL1:
   61              	.LFB66:
    7:lib/mcp3204.c **** 
-   8:lib/mcp3204.c **** uint16_t readADC(uint8_t channel){
+   8:lib/mcp3204.c **** uint16_t adcRead(uint8_t channel){
   62              		.loc 1 8 34 is_stmt 1 view -0
   63              		.cfi_startproc
   64              		@ args = 0, pretend = 0, frame = 8
   65              		@ frame_needed = 0, uses_anonymous_args = 0
   66              		.loc 1 8 34 is_stmt 0 view .LVU4
-  67 0000 00B5     		push	{lr}
+  67 0000 10B5     		push	{r4, lr}
   68              	.LCFI1:
-  69              		.cfi_def_cfa_offset 4
-  70              		.cfi_offset 14, -4
-  71 0002 85B0     		sub	sp, sp, #20
-  72              	.LCFI2:
-  73              		.cfi_def_cfa_offset 24
+  69              		.cfi_def_cfa_offset 8
+  70              		.cfi_offset 4, -8
+  71              		.cfi_offset 14, -4
+  72 0002 84B0     		sub	sp, sp, #16
+  73              	.LCFI2:
+  74              		.cfi_def_cfa_offset 24
    9:lib/mcp3204.c ****     uint8_t txBuffer[3];
-  74              		.loc 1 9 5 is_stmt 1 view .LVU5
+  75              		.loc 1 9 5 is_stmt 1 view .LVU5
   10:lib/mcp3204.c ****     uint8_t rxBuffer[3];
-  75              		.loc 1 10 5 view .LVU6
+  76              		.loc 1 10 5 view .LVU6
   11:lib/mcp3204.c ****     uint16_t result;
-  76              		.loc 1 11 5 view .LVU7
+  77              		.loc 1 11 5 view .LVU7
   12:lib/mcp3204.c **** 
   13:lib/mcp3204.c ****     txBuffer[0] = 0x06;
-  77              		.loc 1 13 5 view .LVU8
-  78              		.loc 1 13 17 is_stmt 0 view .LVU9
-  79 0004 0623     		movs	r3, #6
-  80 0006 8DF80C30 		strb	r3, [sp, #12]
+  78              		.loc 1 13 5 view .LVU8
+  79              		.loc 1 13 17 is_stmt 0 view .LVU9
+  80 0004 0623     		movs	r3, #6
+  81 0006 8DF80C30 		strb	r3, [sp, #12]
   14:lib/mcp3204.c ****     txBuffer[1] = channel << 6;
-  81              		.loc 1 14 5 is_stmt 1 view .LVU10
-  82              		.loc 1 14 27 is_stmt 0 view .LVU11
-  83 000a 9840     		lsls	r0, r0, r3
-  84              	.LVL2:
-  85              		.loc 1 14 17 view .LVU12
-  86 000c 8DF80D00 		strb	r0, [sp, #13]
+  82              		.loc 1 14 5 is_stmt 1 view .LVU10
+  83              		.loc 1 14 27 is_stmt 0 view .LVU11
+  84 000a 9840     		lsls	r0, r0, r3
+  85              	.LVL2:
+  86              		.loc 1 14 17 view .LVU12
+  87 000c 8DF80D00 		strb	r0, [sp, #13]
   15:lib/mcp3204.c **** 
-  16:lib/mcp3204.c ****     HAL_SPI_TransmitReceive(&hspi1, (uint8_t*)txBuffer, (uint8_t*)rxBuffer, 3, DEFAULT_TIMEOUT);
-  87              		.loc 1 16 5 is_stmt 1 view .LVU13
-  88 0010 41F28833 		movw	r3, #5000
-  89 0014 0093     		str	r3, [sp]
-  90 0016 0323     		movs	r3, #3
-  91 0018 02AA     		add	r2, sp, #8
-  92 001a 03A9     		add	r1, sp, #12
-  93 001c 0648     		ldr	r0, .L7
-  94 001e FFF7FEFF 		bl	HAL_SPI_TransmitReceive
-  95              	.LVL3:
-  17:lib/mcp3204.c **** 
-  18:lib/mcp3204.c ****     result = rxBuffer[ 1 ] & 0x0F;
-  96              		.loc 1 18 5 view .LVU14
-  97              		.loc 1 18 22 is_stmt 0 view .LVU15
-  98 0022 9DF80930 		ldrb	r3, [sp, #9]	@ zero_extendqisi2
-  99              		.loc 1 18 12 view .LVU16
-ARM GAS  F:\Temp\cc0RkO35.s 			page 3
+  16:lib/mcp3204.c ****     HAL_GPIO_WritePin(GPIO_ADC_CS_GPIO_Port, GPIO_ADC_CS_Pin, GPIO_PIN_RESET);
+  88              		.loc 1 16 5 is_stmt 1 view .LVU13
+  89 0010 0E4C     		ldr	r4, .L7
+  90 0012 0022     		movs	r2, #0
+  91 0014 1021     		movs	r1, #16
+  92 0016 2046     		mov	r0, r4
+  93 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  94              	.LVL3:
+  17:lib/mcp3204.c ****     HAL_SPI_TransmitReceive(&hspi1, (uint8_t*)txBuffer, (uint8_t*)rxBuffer, 3, DEFAULT_TIMEOUT);
+  95              		.loc 1 17 5 view .LVU14
+  96 001c 4FF0FF33 		mov	r3, #-1
+  97 0020 0093     		str	r3, [sp]
+  98 0022 0323     		movs	r3, #3
+  99 0024 02AA     		add	r2, sp, #8
+ 100 0026 03A9     		add	r1, sp, #12
+ARM GAS  F:\Temp\ccLFor8H.s 			page 3
 
 
- 100 0026 03F00F03 		and	r3, r3, #15
- 101              	.LVL4:
-  19:lib/mcp3204.c ****     result <<= 8;
- 102              		.loc 1 19 5 is_stmt 1 view .LVU17
-  20:lib/mcp3204.c ****     result |= rxBuffer[ 2 ];
- 103              		.loc 1 20 5 view .LVU18
- 104              		.loc 1 20 23 is_stmt 0 view .LVU19
- 105 002a 9DF80A00 		ldrb	r0, [sp, #10]	@ zero_extendqisi2
- 106              	.LVL5:
-  21:lib/mcp3204.c **** 
-  22:lib/mcp3204.c ****     return result;
- 107              		.loc 1 22 5 is_stmt 1 view .LVU20
+ 101 0028 0948     		ldr	r0, .L7+4
+ 102 002a FFF7FEFF 		bl	HAL_SPI_TransmitReceive
+ 103              	.LVL4:
+  18:lib/mcp3204.c ****     HAL_GPIO_WritePin(GPIO_ADC_CS_GPIO_Port, GPIO_ADC_CS_Pin, GPIO_PIN_SET);
+ 104              		.loc 1 18 5 view .LVU15
+ 105 002e 0122     		movs	r2, #1
+ 106 0030 1021     		movs	r1, #16
+ 107 0032 2046     		mov	r0, r4
+ 108 0034 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 109              	.LVL5:
+  19:lib/mcp3204.c **** 
+  20:lib/mcp3204.c ****     result = rxBuffer[ 1 ] & 0x0F;
+ 110              		.loc 1 20 5 view .LVU16
+ 111              		.loc 1 20 22 is_stmt 0 view .LVU17
+ 112 0038 9DF80930 		ldrb	r3, [sp, #9]	@ zero_extendqisi2
+ 113              		.loc 1 20 12 view .LVU18
+ 114 003c 03F00F03 		and	r3, r3, #15
+ 115              	.LVL6:
+  21:lib/mcp3204.c ****     result <<= 8;
+ 116              		.loc 1 21 5 is_stmt 1 view .LVU19
+  22:lib/mcp3204.c ****     result |= rxBuffer[ 2 ];
+ 117              		.loc 1 22 5 view .LVU20
+ 118              		.loc 1 22 23 is_stmt 0 view .LVU21
+ 119 0040 9DF80A00 		ldrb	r0, [sp, #10]	@ zero_extendqisi2
+ 120              	.LVL7:
   23:lib/mcp3204.c **** 
-  24:lib/mcp3204.c **** }...
- 108              		.loc 1 24 1 is_stmt 0 view .LVU21
- 109 002e 40EA0320 		orr	r0, r0, r3, lsl #8
- 110              	.LVL6:
- 111              		.loc 1 24 1 view .LVU22
- 112 0032 05B0     		add	sp, sp, #20
- 113              	.LCFI3:
- 114              		.cfi_def_cfa_offset 4
- 115              		@ sp needed
- 116 0034 5DF804FB 		ldr	pc, [sp], #4
- 117              	.L8:
- 118              		.align	2
- 119              	.L7:
- 120 0038 00000000 		.word	hspi1
- 121              		.cfi_endproc
- 122              	.LFE66:
- 124              		.text
- 125              	.Letext0:
- 126              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
- 127              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
- 128              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
- 129              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 130              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 131              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 132              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
- 133              		.file 9 "lib/mcp3204.h"
-ARM GAS  F:\Temp\cc0RkO35.s 			page 4
+  24:lib/mcp3204.c ****     return result;
+ 121              		.loc 1 24 5 is_stmt 1 view .LVU22
+  25:lib/mcp3204.c **** 
+  26:lib/mcp3204.c **** }
+ 122              		.loc 1 26 1 is_stmt 0 view .LVU23
+ 123 0044 40EA0320 		orr	r0, r0, r3, lsl #8
+ 124              	.LVL8:
+ 125              		.loc 1 26 1 view .LVU24
+ 126 0048 04B0     		add	sp, sp, #16
+ 127              	.LCFI3:
+ 128              		.cfi_def_cfa_offset 8
+ 129              		@ sp needed
+ 130 004a 10BD     		pop	{r4, pc}
+ 131              	.L8:
+ 132              		.align	2
+ 133              	.L7:
+ 134 004c 00100140 		.word	1073811456
+ 135 0050 00000000 		.word	hspi1
+ 136              		.cfi_endproc
+ 137              	.LFE66:
+ 139              		.section	.text.adcReadAll,"ax",%progbits
+ 140              		.align	1
+ 141              		.global	adcReadAll
+ 142              		.syntax unified
+ 143              		.thumb
+ 144              		.thumb_func
+ 145              		.fpu softvfp
+ 147              	adcReadAll:
+ 148              	.LVL9:
+ 149              	.LFB67:
+  27:lib/mcp3204.c **** 
+ARM GAS  F:\Temp\ccLFor8H.s 			page 4
+
+
+  28:lib/mcp3204.c **** uint16_t adcReadAll( uint16_t *valChan0, uint16_t *valChan1, uint16_t *valChan2, uint16_t *valChan3
+  29:lib/mcp3204.c **** {
+ 150              		.loc 1 29 1 is_stmt 1 view -0
+ 151              		.cfi_startproc
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154              		.loc 1 29 1 is_stmt 0 view .LVU26
+ 155 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 156              	.LCFI4:
+ 157              		.cfi_def_cfa_offset 24
+ 158              		.cfi_offset 3, -24
+ 159              		.cfi_offset 4, -20
+ 160              		.cfi_offset 5, -16
+ 161              		.cfi_offset 6, -12
+ 162              		.cfi_offset 7, -8
+ 163              		.cfi_offset 14, -4
+ 164 0002 0746     		mov	r7, r0
+ 165 0004 0E46     		mov	r6, r1
+ 166 0006 1546     		mov	r5, r2
+ 167 0008 1C46     		mov	r4, r3
+  30:lib/mcp3204.c ****     *valChan0 =  adcRead( ADC_CH0 );
+ 168              		.loc 1 30 5 is_stmt 1 view .LVU27
+ 169              		.loc 1 30 18 is_stmt 0 view .LVU28
+ 170 000a 0820     		movs	r0, #8
+ 171              	.LVL10:
+ 172              		.loc 1 30 18 view .LVU29
+ 173 000c FFF7FEFF 		bl	adcRead
+ 174              	.LVL11:
+ 175              		.loc 1 30 15 view .LVU30
+ 176 0010 3880     		strh	r0, [r7]	@ movhi
+  31:lib/mcp3204.c ****     *valChan1 =  adcRead( ADC_CH1 );
+ 177              		.loc 1 31 5 is_stmt 1 view .LVU31
+ 178              		.loc 1 31 18 is_stmt 0 view .LVU32
+ 179 0012 0920     		movs	r0, #9
+ 180 0014 FFF7FEFF 		bl	adcRead
+ 181              	.LVL12:
+ 182              		.loc 1 31 15 view .LVU33
+ 183 0018 3080     		strh	r0, [r6]	@ movhi
+  32:lib/mcp3204.c ****     *valChan2 =  adcRead( ADC_CH2 );
+ 184              		.loc 1 32 5 is_stmt 1 view .LVU34
+ 185              		.loc 1 32 18 is_stmt 0 view .LVU35
+ 186 001a 0A20     		movs	r0, #10
+ 187 001c FFF7FEFF 		bl	adcRead
+ 188              	.LVL13:
+ 189              		.loc 1 32 15 view .LVU36
+ 190 0020 2880     		strh	r0, [r5]	@ movhi
+  33:lib/mcp3204.c ****     *valChan3 =  adcRead( ADC_CH3 );
+ 191              		.loc 1 33 5 is_stmt 1 view .LVU37
+ 192              		.loc 1 33 18 is_stmt 0 view .LVU38
+ 193 0022 0B20     		movs	r0, #11
+ 194 0024 FFF7FEFF 		bl	adcRead
+ 195              	.LVL14:
+ 196              		.loc 1 33 15 view .LVU39
+ 197 0028 2080     		strh	r0, [r4]	@ movhi
+  34:lib/mcp3204.c **** }...
+ 198              		.loc 1 34 1 view .LVU40
+ 199 002a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ARM GAS  F:\Temp\ccLFor8H.s 			page 5
+
+
+ 200              		.loc 1 34 1 view .LVU41
+ 201              		.cfi_endproc
+ 202              	.LFE67:
+ 204              		.text
+ 205              	.Letext0:
+ 206              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 207              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 208              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 209              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 210              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 211              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 212              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
+ 213              		.file 9 "lib/mcp3204.h"
+ARM GAS  F:\Temp\ccLFor8H.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 mcp3204.c
-  F:\Temp\cc0RkO35.s:16     .text.adcInit:00000000 $t
-  F:\Temp\cc0RkO35.s:24     .text.adcInit:00000000 adcInit
-  F:\Temp\cc0RkO35.s:47     .text.adcInit:00000010 $d
-  F:\Temp\cc0RkO35.s:52     .text.readADC:00000000 $t
-  F:\Temp\cc0RkO35.s:59     .text.readADC:00000000 readADC
-  F:\Temp\cc0RkO35.s:120    .text.readADC:00000038 $d
+  F:\Temp\ccLFor8H.s:16     .text.adcInit:00000000 $t
+  F:\Temp\ccLFor8H.s:24     .text.adcInit:00000000 adcInit
+  F:\Temp\ccLFor8H.s:47     .text.adcInit:00000010 $d
+  F:\Temp\ccLFor8H.s:52     .text.adcRead:00000000 $t
+  F:\Temp\ccLFor8H.s:59     .text.adcRead:00000000 adcRead
+  F:\Temp\ccLFor8H.s:134    .text.adcRead:0000004c $d
+  F:\Temp\ccLFor8H.s:140    .text.adcReadAll:00000000 $t
+  F:\Temp\ccLFor8H.s:147    .text.adcReadAll:00000000 adcReadAll
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

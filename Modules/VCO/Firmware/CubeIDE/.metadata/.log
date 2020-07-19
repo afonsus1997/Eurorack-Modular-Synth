@@ -1,0 +1,37 @@
+!SESSION 2020-07-18 18:44:23.545 -----------------------------------------------
+eclipse.buildId=Version 1.0.2
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Firmware\CubeIDE\.mxproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Firmware\CubeIDE\.mxproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-07-18 18:44:35.232
+!MESSAGE Log4j initialized with config file F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Firmware\CubeIDE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-07-18 18:44:37.902
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.net 4 0 2020-07-18 18:44:39.318
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'The Proxy Auto-configuration URL was not found.
+' #12180.
+
+!ENTRY org.eclipse.core.net 4 0 2020-07-18 18:44:39.535
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The proxy auto-configuration script could not be downloaded
+' #12167.
+
+!ENTRY org.eclipse.ui.ide 4 0 2020-07-18 18:44:59.744
+!MESSAGE Could not import project located at F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Firmware\CubeIDE
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at F:\Documents\GitHub\Eurorack-Modular-Synth\Modules\VCO\Firmware\CubeIDE
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:565)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:267)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:251)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:604)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:552)
+	... 2 more

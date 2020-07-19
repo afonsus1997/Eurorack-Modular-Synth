@@ -1,0 +1,286 @@
+ARM GAS  F:\Temp\cc4odEwb.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"DSPmain.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.sineProcessor,"ax",%progbits
+  16              		.align	1
+  17              		.global	sineProcessor
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	sineProcessor:
+  25              	.LVL0:
+  26              	.LFB66:
+  27              		.file 1 "Src/DSPmain.c"
+   1:Src/DSPmain.c **** #include "DSPmain.h"
+   2:Src/DSPmain.c **** 
+   3:Src/DSPmain.c **** 
+   4:Src/DSPmain.c **** int32_t RampIntegratorState0 = 0;
+   5:Src/DSPmain.c **** int32_t RampIntegratorState1 = 0;
+   6:Src/DSPmain.c **** 
+   7:Src/DSPmain.c **** uint8_t currentWave0 = 0;
+   8:Src/DSPmain.c **** uint8_t currentWave1 = 0;
+   9:Src/DSPmain.c **** 
+  10:Src/DSPmain.c **** // void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+  11:Src/DSPmain.c **** // {
+  12:Src/DSPmain.c **** //     // if (htim->Instance == TIM6) {
+  13:Src/DSPmain.c ****         
+  14:Src/DSPmain.c **** //     // }
+  15:Src/DSPmain.c **** // }
+  16:Src/DSPmain.c **** 
+  17:Src/DSPmain.c **** int32_t NCO0(uint8_t wave, uint16_t freq){
+  18:Src/DSPmain.c ****     uint32_t delta_i;
+  19:Src/DSPmain.c **** 
+  20:Src/DSPmain.c **** 
+  21:Src/DSPmain.c ****     delta_i = (pow(2,32)*freq)/SAMPLING_FREQ;
+  22:Src/DSPmain.c **** 
+  23:Src/DSPmain.c ****     RampIntegratorState0 = RampIntegratorState0 + delta_i;
+  24:Src/DSPmain.c **** 
+  25:Src/DSPmain.c ****     switch (wave)
+  26:Src/DSPmain.c ****     {
+  27:Src/DSPmain.c ****     case sine:
+  28:Src/DSPmain.c ****         return sineProcessor(RampIntegratorState0);
+  29:Src/DSPmain.c ****         break;
+  30:Src/DSPmain.c ****     
+  31:Src/DSPmain.c ****     default:
+ARM GAS  F:\Temp\cc4odEwb.s 			page 2
+
+
+  32:Src/DSPmain.c ****         break;
+  33:Src/DSPmain.c ****     }
+  34:Src/DSPmain.c **** 
+  35:Src/DSPmain.c **** }
+  36:Src/DSPmain.c **** 
+  37:Src/DSPmain.c **** uint32_t sineProcessor(int16_t integratorState){
+  28              		.loc 1 37 48 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  38:Src/DSPmain.c ****     int32_t preSine;
+  33              		.loc 1 38 5 view .LVU1
+  39:Src/DSPmain.c ****     uint32_t sineOut;
+  34              		.loc 1 39 5 view .LVU2
+  40:Src/DSPmain.c ****     preSine = RampIntegratorState0 >> SINE_SHIFT;
+  35              		.loc 1 40 5 view .LVU3
+  36              		.loc 1 40 36 is_stmt 0 view .LVU4
+  37 0000 074B     		ldr	r3, .L4
+  38 0002 1B68     		ldr	r3, [r3]
+  39              	.LVL1:
+  41:Src/DSPmain.c ****     preSine &= SINE_SHIFT_MASK;
+  40              		.loc 1 41 5 is_stmt 1 view .LVU5
+  41              		.loc 1 41 13 is_stmt 0 view .LVU6
+  42 0004 C3F38423 		ubfx	r3, r3, #10, #5
+  43              	.LVL2:
+  42:Src/DSPmain.c **** 
+  43:Src/DSPmain.c ****     preSine = SineWave[preSine];
+  44              		.loc 1 43 5 is_stmt 1 view .LVU7
+  45              		.loc 1 43 13 is_stmt 0 view .LVU8
+  46 0008 064A     		ldr	r2, .L4+4
+  47 000a 52F82330 		ldr	r3, [r2, r3, lsl #2]
+  48              	.LVL3:
+  44:Src/DSPmain.c ****     if(integratorState<0)
+  49              		.loc 1 44 5 is_stmt 1 view .LVU9
+  50              		.loc 1 44 7 is_stmt 0 view .LVU10
+  51 000e 0028     		cmp	r0, #0
+  52 0010 03DB     		blt	.L3
+  53              	.L2:
+  45:Src/DSPmain.c ****         preSine = -preSine;
+  46:Src/DSPmain.c ****     
+  47:Src/DSPmain.c ****     sineOut = preSine + INT32_OFFSET;
+  54              		.loc 1 47 5 is_stmt 1 view .LVU11
+  55              	.LVL4:
+  48:Src/DSPmain.c ****     sineOut >> 8; //conversion to dac 24bit
+  56              		.loc 1 48 5 view .LVU12
+  49:Src/DSPmain.c **** 
+  50:Src/DSPmain.c ****     return sineOut;
+  57              		.loc 1 50 5 view .LVU13
+  51:Src/DSPmain.c **** }...
+  58              		.loc 1 51 1 is_stmt 0 view .LVU14
+  59 0012 03F10040 		add	r0, r3, #-2147483648
+  60              	.LVL5:
+  61              		.loc 1 51 1 view .LVU15
+  62 0016 0138     		subs	r0, r0, #1
+  63 0018 7047     		bx	lr
+  64              	.LVL6:
+ARM GAS  F:\Temp\cc4odEwb.s 			page 3
+
+
+  65              	.L3:
+  45:Src/DSPmain.c ****         preSine = -preSine;
+  66              		.loc 1 45 9 is_stmt 1 view .LVU16
+  45:Src/DSPmain.c ****         preSine = -preSine;
+  67              		.loc 1 45 17 is_stmt 0 view .LVU17
+  68 001a 5B42     		rsbs	r3, r3, #0
+  69              	.LVL7:
+  45:Src/DSPmain.c ****         preSine = -preSine;
+  70              		.loc 1 45 17 view .LVU18
+  71 001c F9E7     		b	.L2
+  72              	.L5:
+  73 001e 00BF     		.align	2
+  74              	.L4:
+  75 0020 00000000 		.word	.LANCHOR0
+  76 0024 00000000 		.word	SineWave
+  77              		.cfi_endproc
+  78              	.LFE66:
+  80              		.global	__aeabi_i2d
+  81              		.global	__aeabi_dmul
+  82              		.global	__aeabi_ddiv
+  83              		.global	__aeabi_d2uiz
+  84              		.section	.text.NCO0,"ax",%progbits
+  85              		.align	1
+  86              		.global	NCO0
+  87              		.syntax unified
+  88              		.thumb
+  89              		.thumb_func
+  90              		.fpu softvfp
+  92              	NCO0:
+  93              	.LVL8:
+  94              	.LFB65:
+  17:Src/DSPmain.c **** int32_t NCO0(uint8_t wave, uint16_t freq){
+  95              		.loc 1 17 42 is_stmt 1 view -0
+  96              		.cfi_startproc
+  97              		@ args = 0, pretend = 0, frame = 0
+  98              		@ frame_needed = 0, uses_anonymous_args = 0
+  17:Src/DSPmain.c **** int32_t NCO0(uint8_t wave, uint16_t freq){
+  99              		.loc 1 17 42 is_stmt 0 view .LVU20
+ 100 0000 10B5     		push	{r4, lr}
+ 101              	.LCFI0:
+ 102              		.cfi_def_cfa_offset 8
+ 103              		.cfi_offset 4, -8
+ 104              		.cfi_offset 14, -4
+ 105 0002 0446     		mov	r4, r0
+  18:Src/DSPmain.c ****     uint32_t delta_i;
+ 106              		.loc 1 18 5 is_stmt 1 view .LVU21
+  21:Src/DSPmain.c ****     delta_i = (pow(2,32)*freq)/SAMPLING_FREQ;
+ 107              		.loc 1 21 5 view .LVU22
+  21:Src/DSPmain.c ****     delta_i = (pow(2,32)*freq)/SAMPLING_FREQ;
+ 108              		.loc 1 21 25 is_stmt 0 view .LVU23
+ 109 0004 0846     		mov	r0, r1
+ 110              	.LVL9:
+  21:Src/DSPmain.c ****     delta_i = (pow(2,32)*freq)/SAMPLING_FREQ;
+ 111              		.loc 1 21 25 view .LVU24
+ 112 0006 FFF7FEFF 		bl	__aeabi_i2d
+ 113              	.LVL10:
+  21:Src/DSPmain.c ****     delta_i = (pow(2,32)*freq)/SAMPLING_FREQ;
+ARM GAS  F:\Temp\cc4odEwb.s 			page 4
+
+
+ 114              		.loc 1 21 25 view .LVU25
+ 115 000a 0022     		movs	r2, #0
+ 116 000c 0C4B     		ldr	r3, .L9+8
+ 117 000e FFF7FEFF 		bl	__aeabi_dmul
+ 118              	.LVL11:
+  21:Src/DSPmain.c ****     delta_i = (pow(2,32)*freq)/SAMPLING_FREQ;
+ 119              		.loc 1 21 31 view .LVU26
+ 120 0012 09A3     		adr	r3, .L9
+ 121 0014 D3E90023 		ldrd	r2, [r3]
+ 122 0018 FFF7FEFF 		bl	__aeabi_ddiv
+ 123              	.LVL12:
+  21:Src/DSPmain.c ****     delta_i = (pow(2,32)*freq)/SAMPLING_FREQ;
+ 124              		.loc 1 21 13 view .LVU27
+ 125 001c FFF7FEFF 		bl	__aeabi_d2uiz
+ 126              	.LVL13:
+  23:Src/DSPmain.c ****     RampIntegratorState0 = RampIntegratorState0 + delta_i;
+ 127              		.loc 1 23 5 is_stmt 1 view .LVU28
+  23:Src/DSPmain.c ****     RampIntegratorState0 = RampIntegratorState0 + delta_i;
+ 128              		.loc 1 23 49 is_stmt 0 view .LVU29
+ 129 0020 084A     		ldr	r2, .L9+12
+ 130 0022 1368     		ldr	r3, [r2]
+ 131 0024 1844     		add	r0, r0, r3
+ 132              	.LVL14:
+  23:Src/DSPmain.c ****     RampIntegratorState0 = RampIntegratorState0 + delta_i;
+ 133              		.loc 1 23 26 view .LVU30
+ 134 0026 1060     		str	r0, [r2]
+  25:Src/DSPmain.c ****     switch (wave)
+ 135              		.loc 1 25 5 is_stmt 1 view .LVU31
+ 136 0028 14B9     		cbnz	r4, .L6
+  28:Src/DSPmain.c ****         return sineProcessor(RampIntegratorState0);
+ 137              		.loc 1 28 9 view .LVU32
+  28:Src/DSPmain.c ****         return sineProcessor(RampIntegratorState0);
+ 138              		.loc 1 28 16 is_stmt 0 view .LVU33
+ 139 002a 00B2     		sxth	r0, r0
+ 140 002c FFF7FEFF 		bl	sineProcessor
+ 141              	.LVL15:
+ 142              	.L6:
+  35:Src/DSPmain.c **** }
+ 143              		.loc 1 35 1 view .LVU34
+ 144 0030 10BD     		pop	{r4, pc}
+ 145              	.L10:
+ 146 0032 00BFAFF3 		.align	3
+ 146      0080
+ 147              	.L9:
+ 148 0038 00000000 		.word	0
+ 149 003c 0070E740 		.word	1088909312
+ 150 0040 0000F041 		.word	1106247680
+ 151 0044 00000000 		.word	.LANCHOR0
+ 152              		.cfi_endproc
+ 153              	.LFE65:
+ 155              		.global	currentWave1
+ 156              		.global	currentWave0
+ 157              		.global	RampIntegratorState1
+ 158              		.global	RampIntegratorState0
+ 159              		.section	.bss.RampIntegratorState0,"aw",%nobits
+ 160              		.align	2
+ 161              		.set	.LANCHOR0,. + 0
+ARM GAS  F:\Temp\cc4odEwb.s 			page 5
+
+
+ 164              	RampIntegratorState0:
+ 165 0000 00000000 		.space	4
+ 166              		.section	.bss.RampIntegratorState1,"aw",%nobits
+ 167              		.align	2
+ 170              	RampIntegratorState1:
+ 171 0000 00000000 		.space	4
+ 172              		.section	.bss.currentWave0,"aw",%nobits
+ 175              	currentWave0:
+ 176 0000 00       		.space	1
+ 177              		.section	.bss.currentWave1,"aw",%nobits
+ 180              	currentWave1:
+ 181 0000 00       		.space	1
+ 182              		.text
+ 183              	.Letext0:
+ 184              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 185              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 186              		.file 4 "Src/DSPmain.h"
+ARM GAS  F:\Temp\cc4odEwb.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 DSPmain.c
+  F:\Temp\cc4odEwb.s:16     .text.sineProcessor:00000000 $t
+  F:\Temp\cc4odEwb.s:24     .text.sineProcessor:00000000 sineProcessor
+  F:\Temp\cc4odEwb.s:75     .text.sineProcessor:00000020 $d
+  F:\Temp\cc4odEwb.s:85     .text.NCO0:00000000 $t
+  F:\Temp\cc4odEwb.s:92     .text.NCO0:00000000 NCO0
+  F:\Temp\cc4odEwb.s:148    .text.NCO0:00000038 $d
+  F:\Temp\cc4odEwb.s:180    .bss.currentWave1:00000000 currentWave1
+  F:\Temp\cc4odEwb.s:175    .bss.currentWave0:00000000 currentWave0
+  F:\Temp\cc4odEwb.s:170    .bss.RampIntegratorState1:00000000 RampIntegratorState1
+  F:\Temp\cc4odEwb.s:164    .bss.RampIntegratorState0:00000000 RampIntegratorState0
+  F:\Temp\cc4odEwb.s:160    .bss.RampIntegratorState0:00000000 $d
+  F:\Temp\cc4odEwb.s:167    .bss.RampIntegratorState1:00000000 $d
+  F:\Temp\cc4odEwb.s:176    .bss.currentWave0:00000000 $d
+  F:\Temp\cc4odEwb.s:181    .bss.currentWave1:00000000 $d
+
+UNDEFINED SYMBOLS
+SineWave
+__aeabi_i2d
+__aeabi_dmul
+__aeabi_ddiv
+__aeabi_d2uiz
