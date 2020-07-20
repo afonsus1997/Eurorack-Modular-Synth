@@ -1,0 +1,266 @@
+ARM GAS  F:\Temp\cc5jB7pe.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"interfaces.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.updateJackLEDs,"ax",%progbits
+  16              		.align	1
+  17              		.global	updateJackLEDs
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	updateJackLEDs:
+  25              	.LFB66:
+  26              		.file 1 "Src/interfaces.c"
+   1:Src/interfaces.c **** /**
+   2:Src/interfaces.c **** ***************************************************************************************************
+   3:Src/interfaces.c **** * @file:	interfaces.c
+   4:Src/interfaces.c **** * @author:	Afonso Muralha
+   5:Src/interfaces.c **** * @date:	2020年07月20日 21:10:31 Monday
+   6:Src/interfaces.c **** * @brief:	
+   7:Src/interfaces.c **** ***************************************************************************************************
+   8:Src/interfaces.c **** **/ 
+   9:Src/interfaces.c **** 
+  10:Src/interfaces.c **** #include "interfaces.h"
+  11:Src/interfaces.c **** 
+  12:Src/interfaces.c **** uint8_t jackStatus[6];
+  13:Src/interfaces.c **** 
+  14:Src/interfaces.c **** void updateJackStatus(){
+  15:Src/interfaces.c ****     jackStatus[GateJack] = HAL_GPIO_ReadPin(GATE_SW_GPIO_Port, GATE_SW_Pin);
+  16:Src/interfaces.c ****     jackStatus[FMJack] = HAL_GPIO_ReadPin(FM_CV_SWITCH_GPIO_Port, FM_CV_SWITCH_Pin);
+  17:Src/interfaces.c ****     jackStatus[CVJack] = HAL_GPIO_ReadPin(PITCH_CV_SWITCH_GPIO_Port, PITCH_CV_SWITCH_Pin);
+  18:Src/interfaces.c ****     jackStatus[PWMJack] = HAL_GPIO_ReadPin(PWM_SW_GPIO_Port, PWM_SW_Pin);
+  19:Src/interfaces.c ****     jackStatus[Out1Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_1_SW_GPIO_Port, AUDIO_OUT_1_SW_Pin);
+  20:Src/interfaces.c ****     jackStatus[Out2Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_2_SW_Pin, AUDIO_OUT_2_SW_Pin);
+  21:Src/interfaces.c ****     updateJackLEDs();
+  22:Src/interfaces.c **** }
+  23:Src/interfaces.c **** 
+  24:Src/interfaces.c **** void updateJackLEDs(){
+  27              		.loc 1 24 22 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 38B5     		push	{r3, r4, r5, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 16
+  34              		.cfi_offset 3, -16
+ARM GAS  F:\Temp\cc5jB7pe.s 			page 2
+
+
+  35              		.cfi_offset 4, -12
+  36              		.cfi_offset 5, -8
+  37              		.cfi_offset 14, -4
+  25:Src/interfaces.c ****     HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, jackStatus[GateJack]);
+  38              		.loc 1 25 5 view .LVU1
+  39              		.loc 1 25 59 is_stmt 0 view .LVU2
+  40 0002 114C     		ldr	r4, .L3
+  41              		.loc 1 25 5 view .LVU3
+  42 0004 114D     		ldr	r5, .L3+4
+  43 0006 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
+  44 0008 0121     		movs	r1, #1
+  45 000a 2846     		mov	r0, r5
+  46 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  47              	.LVL0:
+  26:Src/interfaces.c ****     HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, jackStatus[PWMJack]);
+  48              		.loc 1 26 5 is_stmt 1 view .LVU4
+  49 0010 6278     		ldrb	r2, [r4, #1]	@ zero_extendqisi2
+  50 0012 0221     		movs	r1, #2
+  51 0014 2846     		mov	r0, r5
+  52 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  53              	.LVL1:
+  27:Src/interfaces.c ****     HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, jackStatus[FMJack]);
+  54              		.loc 1 27 5 view .LVU5
+  55 001a A278     		ldrb	r2, [r4, #2]	@ zero_extendqisi2
+  56 001c 0421     		movs	r1, #4
+  57 001e 2846     		mov	r0, r5
+  58 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  59              	.LVL2:
+  28:Src/interfaces.c ****     HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, jackStatus[CVJack]);
+  60              		.loc 1 28 5 view .LVU6
+  61 0024 E278     		ldrb	r2, [r4, #3]	@ zero_extendqisi2
+  62 0026 0821     		movs	r1, #8
+  63 0028 2846     		mov	r0, r5
+  64 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  65              	.LVL3:
+  29:Src/interfaces.c ****     HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin, jackStatus[Out1Jack]);
+  66              		.loc 1 29 5 view .LVU7
+  67 002e A5F50065 		sub	r5, r5, #2048
+  68 0032 2279     		ldrb	r2, [r4, #4]	@ zero_extendqisi2
+  69 0034 0121     		movs	r1, #1
+  70 0036 2846     		mov	r0, r5
+  71 0038 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  72              	.LVL4:
+  30:Src/interfaces.c ****     HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin, jackStatus[Out2Jack]);
+  73              		.loc 1 30 5 view .LVU8
+  74 003c 6279     		ldrb	r2, [r4, #5]	@ zero_extendqisi2
+  75 003e 0221     		movs	r1, #2
+  76 0040 2846     		mov	r0, r5
+  77 0042 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  78              	.LVL5:
+  31:Src/interfaces.c **** }
+  79              		.loc 1 31 1 is_stmt 0 view .LVU9
+  80 0046 38BD     		pop	{r3, r4, r5, pc}
+  81              	.L4:
+  82              		.align	2
+  83              	.L3:
+  84 0048 00000000 		.word	.LANCHOR0
+ARM GAS  F:\Temp\cc5jB7pe.s 			page 3
+
+
+  85 004c 00100140 		.word	1073811456
+  86              		.cfi_endproc
+  87              	.LFE66:
+  89              		.section	.text.updateJackStatus,"ax",%progbits
+  90              		.align	1
+  91              		.global	updateJackStatus
+  92              		.syntax unified
+  93              		.thumb
+  94              		.thumb_func
+  95              		.fpu softvfp
+  97              	updateJackStatus:
+  98              	.LFB65:
+  14:Src/interfaces.c ****     jackStatus[GateJack] = HAL_GPIO_ReadPin(GATE_SW_GPIO_Port, GATE_SW_Pin);
+  99              		.loc 1 14 24 is_stmt 1 view -0
+ 100              		.cfi_startproc
+ 101              		@ args = 0, pretend = 0, frame = 0
+ 102              		@ frame_needed = 0, uses_anonymous_args = 0
+ 103 0000 38B5     		push	{r3, r4, r5, lr}
+ 104              	.LCFI1:
+ 105              		.cfi_def_cfa_offset 16
+ 106              		.cfi_offset 3, -16
+ 107              		.cfi_offset 4, -12
+ 108              		.cfi_offset 5, -8
+ 109              		.cfi_offset 14, -4
+  15:Src/interfaces.c ****     jackStatus[FMJack] = HAL_GPIO_ReadPin(FM_CV_SWITCH_GPIO_Port, FM_CV_SWITCH_Pin);
+ 110              		.loc 1 15 5 view .LVU11
+  15:Src/interfaces.c ****     jackStatus[FMJack] = HAL_GPIO_ReadPin(FM_CV_SWITCH_GPIO_Port, FM_CV_SWITCH_Pin);
+ 111              		.loc 1 15 28 is_stmt 0 view .LVU12
+ 112 0002 124D     		ldr	r5, .L7
+ 113 0004 4FF40071 		mov	r1, #512
+ 114 0008 2846     		mov	r0, r5
+ 115 000a FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 116              	.LVL6:
+  15:Src/interfaces.c ****     jackStatus[FMJack] = HAL_GPIO_ReadPin(FM_CV_SWITCH_GPIO_Port, FM_CV_SWITCH_Pin);
+ 117              		.loc 1 15 26 view .LVU13
+ 118 000e 104C     		ldr	r4, .L7+4
+ 119 0010 2070     		strb	r0, [r4]
+  16:Src/interfaces.c ****     jackStatus[CVJack] = HAL_GPIO_ReadPin(PITCH_CV_SWITCH_GPIO_Port, PITCH_CV_SWITCH_Pin);
+ 120              		.loc 1 16 5 is_stmt 1 view .LVU14
+  16:Src/interfaces.c ****     jackStatus[CVJack] = HAL_GPIO_ReadPin(PITCH_CV_SWITCH_GPIO_Port, PITCH_CV_SWITCH_Pin);
+ 121              		.loc 1 16 26 is_stmt 0 view .LVU15
+ 122 0012 8021     		movs	r1, #128
+ 123 0014 2846     		mov	r0, r5
+ 124 0016 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 125              	.LVL7:
+  16:Src/interfaces.c ****     jackStatus[CVJack] = HAL_GPIO_ReadPin(PITCH_CV_SWITCH_GPIO_Port, PITCH_CV_SWITCH_Pin);
+ 126              		.loc 1 16 24 view .LVU16
+ 127 001a A070     		strb	r0, [r4, #2]
+  17:Src/interfaces.c ****     jackStatus[PWMJack] = HAL_GPIO_ReadPin(PWM_SW_GPIO_Port, PWM_SW_Pin);
+ 128              		.loc 1 17 5 is_stmt 1 view .LVU17
+  17:Src/interfaces.c ****     jackStatus[PWMJack] = HAL_GPIO_ReadPin(PWM_SW_GPIO_Port, PWM_SW_Pin);
+ 129              		.loc 1 17 26 is_stmt 0 view .LVU18
+ 130 001c 4021     		movs	r1, #64
+ 131 001e 2846     		mov	r0, r5
+ 132 0020 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 133              	.LVL8:
+  17:Src/interfaces.c ****     jackStatus[PWMJack] = HAL_GPIO_ReadPin(PWM_SW_GPIO_Port, PWM_SW_Pin);
+ARM GAS  F:\Temp\cc5jB7pe.s 			page 4
+
+
+ 134              		.loc 1 17 24 view .LVU19
+ 135 0024 E070     		strb	r0, [r4, #3]
+  18:Src/interfaces.c ****     jackStatus[Out1Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_1_SW_GPIO_Port, AUDIO_OUT_1_SW_Pin);
+ 136              		.loc 1 18 5 is_stmt 1 view .LVU20
+  18:Src/interfaces.c ****     jackStatus[Out1Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_1_SW_GPIO_Port, AUDIO_OUT_1_SW_Pin);
+ 137              		.loc 1 18 27 is_stmt 0 view .LVU21
+ 138 0026 4FF48071 		mov	r1, #256
+ 139 002a 2846     		mov	r0, r5
+ 140 002c FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 141              	.LVL9:
+  18:Src/interfaces.c ****     jackStatus[Out1Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_1_SW_GPIO_Port, AUDIO_OUT_1_SW_Pin);
+ 142              		.loc 1 18 25 view .LVU22
+ 143 0030 6070     		strb	r0, [r4, #1]
+  19:Src/interfaces.c ****     jackStatus[Out2Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_2_SW_Pin, AUDIO_OUT_2_SW_Pin);
+ 144              		.loc 1 19 5 is_stmt 1 view .LVU23
+  19:Src/interfaces.c ****     jackStatus[Out2Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_2_SW_Pin, AUDIO_OUT_2_SW_Pin);
+ 145              		.loc 1 19 28 is_stmt 0 view .LVU24
+ 146 0032 2021     		movs	r1, #32
+ 147 0034 2846     		mov	r0, r5
+ 148 0036 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 149              	.LVL10:
+  19:Src/interfaces.c ****     jackStatus[Out2Jack] = HAL_GPIO_ReadPin(AUDIO_OUT_2_SW_Pin, AUDIO_OUT_2_SW_Pin);
+ 150              		.loc 1 19 26 view .LVU25
+ 151 003a 2071     		strb	r0, [r4, #4]
+  20:Src/interfaces.c ****     updateJackLEDs();
+ 152              		.loc 1 20 5 is_stmt 1 view .LVU26
+  20:Src/interfaces.c ****     updateJackLEDs();
+ 153              		.loc 1 20 28 is_stmt 0 view .LVU27
+ 154 003c 0421     		movs	r1, #4
+ 155 003e 0846     		mov	r0, r1
+ 156 0040 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 157              	.LVL11:
+  20:Src/interfaces.c ****     updateJackLEDs();
+ 158              		.loc 1 20 26 view .LVU28
+ 159 0044 6071     		strb	r0, [r4, #5]
+  21:Src/interfaces.c **** }
+ 160              		.loc 1 21 5 is_stmt 1 view .LVU29
+ 161 0046 FFF7FEFF 		bl	updateJackLEDs
+ 162              	.LVL12:
+  22:Src/interfaces.c **** 
+ 163              		.loc 1 22 1 is_stmt 0 view .LVU30
+ 164 004a 38BD     		pop	{r3, r4, r5, pc}
+ 165              	.L8:
+ 166              		.align	2
+ 167              	.L7:
+ 168 004c 000C0140 		.word	1073810432
+ 169 0050 00000000 		.word	.LANCHOR0
+ 170              		.cfi_endproc
+ 171              	.LFE65:
+ 173              		.global	jackStatus
+ 174              		.section	.bss.jackStatus,"aw",%nobits
+ 175              		.align	2
+ 176              		.set	.LANCHOR0,. + 0
+ 179              	jackStatus:
+ 180 0000 00000000 		.space	6
+ 180      0000
+ 181              		.text
+ARM GAS  F:\Temp\cc5jB7pe.s 			page 5
+
+
+ 182              	.Letext0:
+ 183              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 184              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2020-q2-preview\\arm-none-eabi\\i
+ 185              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 186              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 187              		.file 6 "Src/interfaces.h"
+ARM GAS  F:\Temp\cc5jB7pe.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 interfaces.c
+  F:\Temp\cc5jB7pe.s:16     .text.updateJackLEDs:00000000 $t
+  F:\Temp\cc5jB7pe.s:24     .text.updateJackLEDs:00000000 updateJackLEDs
+  F:\Temp\cc5jB7pe.s:84     .text.updateJackLEDs:00000048 $d
+  F:\Temp\cc5jB7pe.s:90     .text.updateJackStatus:00000000 $t
+  F:\Temp\cc5jB7pe.s:97     .text.updateJackStatus:00000000 updateJackStatus
+  F:\Temp\cc5jB7pe.s:168    .text.updateJackStatus:0000004c $d
+  F:\Temp\cc5jB7pe.s:179    .bss.jackStatus:00000000 jackStatus
+  F:\Temp\cc5jB7pe.s:175    .bss.jackStatus:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_GPIO_ReadPin

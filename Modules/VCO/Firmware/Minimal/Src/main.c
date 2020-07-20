@@ -26,12 +26,14 @@
 #include "mcp3204.h"
 #include "DSPmain.h"
 #include "stm32_HAL.h"
+#include "interfaces.h"
 // extern uint32_t potVals[4];
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 uint16_t pot1, pot2, pot3, pot4;
+// extern uint8_t jackStatus[6];
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -133,25 +135,9 @@ int main(void)
     pot3 = potVals[Pot3];
     pot4 = potVals[Pot4];
 
-    if(pot3 > 0x7D0)
-      HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_SET);
-    else
-      HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET);
+    updateJackStatus();
+    
 
-    if(pot2 > 0x7D0)
-      HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
-    else
-      HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
-        
-    if(pot1 > 0x7D0)
-      HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-    else
-      HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-        
-    if(pot4 > 0x7D0)
-      HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_SET);
-    else
-      HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, GPIO_PIN_RESET);
   }
   /* USER CODE END 3 */
 }
