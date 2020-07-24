@@ -7,12 +7,34 @@ int32_t RampIntegratorState1 = 0;
 uint8_t currentWave0 = 0;
 uint8_t currentWave1 = 0;
 
+int16_t sampleBuffer1[SAMPLEBUFFERSIZE];
+int16_t sampleBuffer2[SAMPLEBUFFERSIZE];
+
+uint16_t transferBuffer1[TRANSFERBUFFERSIZE];
+uint16_t transferBuffer2[TRANSFERBUFFERSIZE];
+
+
+
 // void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 // {
 //     // if (htim->Instance == TIM6) {
         
 //     // }
 // }
+
+extern "C" void HAL_I2S_TxCpltCallback(I2S_HandleTypeDef *hi2s)
+{
+  // second half finished, filling it up again while first  half is playing
+  for (uint8_t i = 0; i < 25; i++)
+  {
+      
+  }
+  
+}
+extern "C" void HAL_I2S_TxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
+{
+  // first half finished, filling it up again while second half is playing
+}
 
 int32_t NCO0(uint8_t wave, uint16_t freq){
     uint32_t delta_i;

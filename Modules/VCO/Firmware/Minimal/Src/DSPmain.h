@@ -15,6 +15,9 @@
 #include <math.h>
 // #include "wavetables.h"
 
+#define SAMPLEBUFFERSIZE 50
+#define TRANSFERBUFFERSIZE SAMPLEBUFFERSIZE/2
+
 #define INT32_OFFSET 2147483647
 
 #define SAMPLING_FREQ 48000
